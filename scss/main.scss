@@ -1,3 +1,55 @@
+$primary: rgb(3, 45, 112);
+$secondary: orange;
+$light: rgb(244, 246, 250);
+$info: rgb(222, 226, 230);
+
+$navbar-light-color:                 $primary;
+$navbar-light-hover-color:           $primary;
+$navbar-light-toggler-border-color:  rgba($primary, 0);
+
+$btn-focus-box-shadow:  none;
+$btn-active-box-shadow: none;
+
+$card-border-width: 0;
+
+$box-shadow: 0 2px 5px rgba(152, 147, 147, 0.7);
+
+$accordion-border-width:     0;
+
+$accordion-icon-color: rgba(75, 88, 109, 0.582);
+$accordion-icon-active-color: rgba(75, 88, 109, 0.582);
+
+$accordion-button-active-bg:    white;
+
+$accordion-icon-width:                    1.5rem;
+$accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color}'><path fill-rule='evenodd' d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/></svg>");
+$accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color}'><path fill-rule='evenodd' d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/></svg>");
 
 
-@import "../node_modules/bootstrap/scss/bootstrap";
+button.navbar-toggler:focus, button.navbar-toggler:active, button.navbar-toggler-icon:focus{
+    outline: none!important;
+    box-shadow: none;
+}
+
+.btn:focus, a:focus{
+         outline: none;
+         border: none;
+}
+
+html{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+
+@import "../node_modules/bootstrap/scss/bootstrap"
+

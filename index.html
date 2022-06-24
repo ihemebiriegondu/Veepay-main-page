@@ -8,31 +8,42 @@
     <link rel="signup.html" href="">
     <link rel="login.html" href="">
     <title>Veepay</title>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
 
     <!-- Navigation Section -->
-    <div class="navigation">
-        <div class="logo">
-            <img class="logo-img" src="" alt="logo">
-        </div>
-        <div class="links">
-            <nav>
-                <ul>
-                    <li><a href="">Quick Buy</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="signup.html">Sign up</a></li>
+    <nav class="navbar navbar-expand-lg bg-white fixed-top navbar-light">
+        <div class="container-fluid m-auto ms-0 ps-0">
+            <a class="navbar-brand" href="">
+                <img class="logo-img" width="200" src="./images/veepay logo new.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 justify-content-between">
+                    <li class="nav-item"><a class="nav-link me-5 fs-5 active text-primary" aria-current="page"
+                            href="">Quick Buy</a></li>
+                    <li class="nav-item"><a class="nav-link me-5 fs-5 text-primary" href="">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link me-5 fs-5 text-primary" href="login.html">Login</a></li>
+                    <li class="nav-item"><a class="nav-link me-5 fs-5 text-primary" href="signup.html">Sign up</a></li>
                 </ul>
-            </nav>
+            </div>
         </div>
-    </div>
+    </nav>
+
     <!-- Header Section -->
-    <div class="header">
+    <div class="header p-5" style="background-color: rgb(221, 231, 248);">
         <img class="header-img" src="" alt="">
         <img class="logo-img" src="" alt="">
-        <h1 class="big-heading">Feed your Network, Live Better</h1>
+        <h1 class="big-heading mt-5">Feed your Network, Live Better</h1>
         <p class="header-para">
             Veepay is a three in one telecommunication platform that <br>
             provides its users with hassle-free experience anytime they use its <br> product. Veepay intends to connect
@@ -42,109 +53,276 @@
         </p>
         <a href="#" class="start-link">Start now</a>
     </div>
-    <!-- Products -->
-    <div class="products">
-        <h2 class="product-head">
-            Products and Services
-        </h2>
-        <p class="product-head">Our sole aim is to provide Bulk SMS, SME Data, And Recharge Plartform all at affordable
-            rates. Aside <br>
-            the fact that we sell internet data and airtime, you can also pay your Utility bills such as Electricity
-            <br>
-            and Cable TV Subscriptions.
-        </p>
-        <div class="card-container">
-            <div class="card">
-                <h3>SME DATA</h3>
-                <button class="card_btn">BUY NOW</button>
+
+
+    <section class="row">
+        <div class="col-11 m-auto">
+            <!-- Products -->
+            <div class="products">
+                <div class="row">
+                    <div class="text-center col-8 my-5 m-auto">
+                        <h2 class="product-head lh-lg">
+                            Products and Services
+                        </h2>
+                        <p class="product-head fs-5 lh-base fw-semibold">Our sole aim is to provide Bulk SMS, SME Data,
+                            And
+                            Recharge Plartform all at
+                            affordable rates. <br />
+                            Aside the fact that we sell internet data and airtime, you can also pay your Utility bills
+                            such
+                            as <br />
+                            Electricity and Cable TV Subscriptions.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card-container row row-cols-4 g-4">
+                    <div class="col">
+                        <div class="card bg-light shadow">
+                            <div class="card-body">
+                                <div class="m-auto text-center pt-4 pb-4">
+                                    <i class="bi bi-arrow-down-up bg-info h3 px-3 py-2 rounded-circle"></i>
+                                </div>
+                                <div class="text-center">
+                                    <h3 class="mb-4">SME DATA</h3>
+                                    <button class="btn btn-primary px-5 py-2 mb-3 rounded">BUY NOW</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card bg-light shadow">
+                            <div class="card-body">
+                                <div class="m-auto text-center pt-4 pb-4">
+                                    <i class="bi bi-wifi bg-info h3 px-3 py-2 rounded-circle"></i>
+                                </div>
+                                <div class="text-center">
+                                    <h3 class="mb-4">RECHARGE</h3>
+                                    <button class="btn btn-primary px-5 py-2 mb-3 rounded">BUY NOW</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card bg-light shadow">
+                            <div class="card-body">
+                                <div class="m-auto text-center pt-4 pb-4">
+                                    <i class="bi bi-chat-square-dots-fill bg-info h3 px-3 py-2 rounded-circle"></i>
+                                </div>
+                                <div class="text-center">
+                                    <h3 class="mb-4">BULK SMS</h3>
+                                    <button class="btn btn-primary px-5 py-2 mb-3 rounded">BUY NOW</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card bg-light shadow">
+                            <div class="card-body">
+                                <div class="m-auto text-center pt-4 pb-4">
+                                    <i class="bi bi-tv-fill bg-info h3 px-3 py-2 rounded-circle"></i>
+                                </div>
+                                <div class="text-center">
+                                    <h3 class="mb-4">CABLE TV</h3>
+                                    <button class="btn btn-primary px-5 py-2 mb-3 rounded">BUY NOW</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="card">
-                <h3>RECHARGE</h3>
-                <button class="card_btn">BUY NOW</button>
+        </div>
+        <!-- Testimonials -->
+        <div class="testimonial mt-5">
+            <div class="row row-cols-2 my-5 bg-light pt-3">
+                <div class="image">
+                    <img src="" alt="" class="testimonial-img">
+                </div>
+                <div class="testimonial-text">
+                    <h2 class="text-head mb-4">Why use our Platform</h2>
+                    <ul class="text-link fs-5">
+                        <li>Roll out Subscriptions in minutes</li>
+                        <li>24/7 Availability</li>
+                        <li>Ease of adding contact(flexibility to add a mobile <br> contact directly from phone)</li>
+                        <li>Enjoy cheaper rates.</li>
+                        <li>Stress free Recharge and subscriptions</li>
+                        <li>Prompt support</li>
+                        <li>Secure and convenient.</li>
+                        <li class="list-unstyled mb-4"><a href="">Explore more</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="card">
-                <h3>BULK SMS</h3>
-                <button class="card_btn">BUY NOW</button>
+        </div>
+        <!-- Pricing -->
+        <div class="pricing-container">
+            <div class="pricing-card"></div>
+            <div class="pricing-card"></div>
+            <div class="pricing-card"></div>
+            <div></div>
+            <div></div>
+        </div>
+        <!-- FAQS -->
+        <div class="FAQ row">
+            <div class="col-11 m-auto">
+                <h2 class="text-center mb-5 mt-4">Frequently asked Questions</h2>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <div class="border border-3 rounded border-info border-primary mb-3 ps-5">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    What is Veepay
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body lead">
+                                    Veepay is a three in one telecommunication platform that provides its users with
+                                    hassle-free
+                                    experience anytime they use its product. Veepay intends to connect individuals in
+                                    ways
+                                    to pay
+                                    for their favorite services by providing easier, faster and secure ways to recharge
+                                    your
+                                    favorite brands.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="border border-3 rounded border-info border-primary mb-3 ps-5">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    How do I use my Dashboard
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="border border-3 rounded border-info border-primary mb-3 ps-5">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    How do I add and remove my debit card
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="border border-3 rounded border-info border-primary mb-3 ps-5">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    What is Bulk SMS
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="border border-3 rounded border-info border-primary mb-3 ps-5">
+                            <h2 class="accordion-header" id="headingfive">
+                                <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+                                    Can I send International bulk SMS through this platform
+                                </button>
+                            </h2>
+                            <div id="collapsefive" class="accordion-collapse collapse" aria-labelledby="headingfive"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="border border-3 rounded border-info border-primary mb-3 ps-5">
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    Do you have a Mobile App
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
             </div>
-            <div class="card">
-                <h3>CABLE TV</h3>
-                <button class="card_btn">BUY NOW</button>
+            <div class="FAQ-footer text-center mt-5 mb-5">
+                <p class="h5">More Questions?</p>
+                <a class="h5 fst-italic text-primary" href="">Read more</a>
             </div>
         </div>
-    </div>
-    <!-- Testimonials -->
-    <div class="testimonial">
-        <div class="image">
-            <img src="" alt="" class="testimonial-img">
-        </div>
-        <div class="testimonial-text">
-            <h2 class="text-head">Why use our Platform</h2>
-            <ul class="text-link">
-                <li>Roll out Subscriptions in minutes</li>
-                <li>24/7 Availability</li>
-                <li>Ease of adding contact(flexibility to add a mobile <br> contact directly from phone)</li>
-                <li>Enjoy cheaper rates.</li>
-                <li>Stress free Recharge and subscriptions</li>
-                <li>Prompt support</li>
-                <li>Secure and convenient.</li>
-            </ul>
-        </div>
-    </div>
-    <!-- Pricing -->
-    <div class="pricing-container">
-        <div class="pricing-card"></div>
-        <div class="pricing-card"></div>
-        <div class="pricing-card"></div>
-    </div>
-    <!-- FAQS -->
-    <div class="FAQ">
-        <div class="FAQ-content">
-            <h4>What is Veepay</h4>
+    </section>
 
-        </div>
-        <div class="FAQ-content">
-            <h4>How do I use my Dashboard</h4>
-
-        </div>
-        <div class="FAQ-content">
-            <h4>How do I add and remove my debit card</h4>
-
-        </div>
-        <div class="FAQ-content">
-            <h4>What is Bulk SMS</h4>
-
-        </div>
-        <div class="FAQ-content">
-            <h4>Can I send International bulk SMS through this platform</h4>
-
-        </div>
-        <div class="FAQ-content">
-            <h4>Do you have a Mobile App</h4>
-
-        </div>
-        <div class="FAQ-footer">
-            <p>More Questions?</p>
-            <a href="">Read more</a>
-        </div>
-    </div>
     <!-- Footer -->
-    <div class="footer">
-        <h2>About Us</h2>
-        <p>Veepay is a three in one telecommunication platform that provides its users with hassle-free experience
-            anytime they use its <br>
-            product. Veepay intends to connect individuals in ways to pay for their favorite services by providing
-            easier, faster and <br>
-            secure ways to recharge your favorite brands.
-        </p>
-        <hr>
-        <h2>Contacts</h2>
-        <!-- icons -->
+    <div class="footer row bg-light">
+        <div class="col-9 text-center m-auto py-4">
+            <h2 class="mb-5">About Us</h2>
+            <p class="mb-5 fs-5">Veepay is a three in one telecommunication platform that provides its users with
+                hassle-free
+                experience anytime they use its product. Veepay intends to connect individuals in
+                ways
+                to pay
+                for their favorite services by providing easier, faster and secure ways to recharge
+                your
+                favorite brands.</p>
+            <hr class="w-25 m-auto" style="height: 2px; color: rgb(143, 175, 208);">
+            <h2 class="mb-5 mt-4">Contacts</h2>
+            <!-- icons -->
 
-        <div class="copyright">
-            <p>2022 Copyright. Veepay</p>
+            <div class="footer-icons mb-4">
+                <a class="text-decoration-none" href="">
+                    <img src="./images/icons8-phone-64.png" alt="" width="32" class="me-4">
+                </a>
+                <a class="text-decoration-none" href="">
+                    <img src="./images/icons8-facebook-48.png" alt="" width="37" class="me-4">
+                </a>
+                <a class="text-decoration-none" href="">
+                    <img src="./images/icons8-linkedin-circled-48.png" alt="" width="39" class="me-4">
+                </a>
+                <a class="text-decoration-none" href="">
+                    <img src="./images/icons8-instagram-50.png" alt="" width="31" class="me-4">
+                </a>
+                <a class="text-decoration-none" href="">
+                    <img src="./images/icons8-twitter-48.png" alt="" width="30" class="me-4">
+                </a>
+                <a class="text-decoration-none" href="">
+                    <img src="./images/icons8-circled-envelope-50.png" alt="" width="35">
+                </a>
+            </div>
+        </div>
+        <div class="copyright py-2 bg-primary text-white text-center col-12">
+            <p class="my-2 fst-italic fs-6">&copy; 2022 Copyright. Veepay</p>
         </div>
     </div>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
