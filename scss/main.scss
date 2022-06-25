@@ -50,6 +50,41 @@ body{
     overflow-x: hidden;
 }
 
+.last-btn{
+    border: 3px solid $primary !important;
+}
 
+.pricing-card-container{
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.pricing-card-container::-webkit-scrollbar{
+    display: none;
+}
+
+.pricing-cards{
+    min-width: 470px;
+}
+
+.heading-line::before{
+    content: "";
+    width: 6rem;
+    height: 0.1rem;
+    margin: 0 auto;
+    display: block;
+    background-color: rgba(3, 45, 112, 0.304);
+}
+
+.heading-line::after{
+    content: "";
+    width: 0.2rem;
+    height: 0.2rem;
+    padding: 0.2rem;
+    border-radius: 50%;
+    margin: -0.25rem auto 3rem auto;
+    display: block;
+    background-color: $primary;
+}
 @import "../node_modules/bootstrap/scss/bootstrap"
 
