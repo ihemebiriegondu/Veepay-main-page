@@ -1,71 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-w idth, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script>
-        function validate() {
-            var mail = document.getElementById("text").value;
-            var regx = /^([a-zA-Z0-9\._])+@([a-zA-Z0-9])+.([a-Z]+)(.[a-z]+)?$/
-
-            if (regx.text(mail)) {
-
-                alert("successful")
-                return true;
-
-            } else {
-                alert("Sorry! Invalid email address")
-                return false;
-            }
-        }
-    </script>
-
 </head>
-
 <body>
-    <div class="split-screen">
-        <div class="left">
-            <secton class="copy">
-
-                <br> <br> <br> <br> <br> <br> <br>
-                <h5>Dont have an Account? <b>Sign Up</b></h5>
-                <p><i>Fill up some information and start your Journey<br><br>with us</i></p>
-                <a href="#"><button>Sign Up</button></a>
-            </secton>
+    <div class="login-pg">
+        <img class="logo" src="" alt="">
+        <div class="Dont have an account? signup">
+            <h5>Fill up some informations and start journey with us.</h5>
+            <p></p>
+            <button>Sign up</button>
         </div>
-        <div class="right">
-            <form>
-                <section class="Login-Container">
-                    <h2>Log in to Account</h2>
-                </section>
-                <input type="text" placeholder="Email/Phone no" id="text" />
+        <div class="login to your account">
+            <h2>Login to your Account</h2>
+            <form class="login-form" action="post"> <br/><br/>
+                
+                <input type="Email/Phone no"name="Email/Phone no"placeholder="Email/Phone no"/> </br></br>
 
-                <br>
-                <div class="input-container password">
-                    <input type="password" placeholder="Password" id="password" />
-                    <i class="fa fa-eye-slash" aria-hidden="true"></i>
-                    <br>
-                    <input type="checkbox">
-                    <label for="rememberMe "> Remember me
-             </label>
-                    <br>
-                    <button class="button button1" onclick="validate()" type="button">Submit</button>
-
-                    <p> Forgot Password?</p>
-                    <br>
+                <input type="password"name="Password"placeholder="Password"/>
+        
             </form>
-            <p>----- Or sign in with ----</p>
-            </div>
+            <input type="checkbox" value="lsRememberMe" 
+            id="rememberMe"> <label 
+            for="rememberMe">Remember me</label>
+    
+            <p></p>
+            <!-- icons -->
         </div>
     </div>
-    <footer>
-        <!--Social Media Icons-->
-    </footer>
 </body>
-
 </html>
