@@ -3,71 +3,87 @@ $secondary: orange;
 $light: rgb(244, 246, 250);
 $info: rgb(222, 226, 230);
 
-$navbar-light-color:                 $primary;
-$navbar-light-hover-color:           $primary;
-$navbar-light-toggler-border-color:  rgba($primary, 0);
+$navbar-light-color: $primary;
+$navbar-light-hover-color: $primary;
+$navbar-light-toggler-border-color: rgba($primary, 0);
 
-$btn-focus-box-shadow:  none;
+$btn-focus-box-shadow: none;
 $btn-active-box-shadow: none;
 
 $card-border-width: 0;
 
 $box-shadow: 0 2px 5px rgba(152, 147, 147, 0.7);
 
-$accordion-border-width:     0;
+$accordion-border-width: 0;
 
 $accordion-icon-color: rgba(75, 88, 109, 0.582);
 $accordion-icon-active-color: rgba(75, 88, 109, 0.582);
 
-$accordion-button-active-bg:    white;
+$accordion-button-active-bg: white;
 
-$accordion-icon-width:                    1.5rem;
+$accordion-icon-width: 1.5rem;
 $accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color}'><path fill-rule='evenodd' d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/></svg>");
 $accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color}'><path fill-rule='evenodd' d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/></svg>");
 
+$input-border-width: 3px;
+$input-border-radius-lg: 10px;
+$input-border-color: rgba(115, 126, 145, 0.7);
+$input-focus-border-color: rgba(115, 126, 145, 0.7);
+$input-focus-color: black;
+$input-focus-width: 3px;
+$input-focus-box-shadow: none;
 
-button.navbar-toggler:focus, button.navbar-toggler:active, button.navbar-toggler-icon:focus{
-    outline: none!important;
+
+$input-group-addon-bg: white;
+
+
+button.navbar-toggler:focus,
+button.navbar-toggler:active,
+button.navbar-toggler-icon:focus {
+    outline: none !important;
     box-shadow: none;
 }
 
-.btn:focus, a:focus{
-         outline: none;
-         border: none;
+.btn:focus,
+a:focus {
+    outline: none;
+    border: none;
 }
 
-html{
+html {
     width: 100%;
     padding: 0;
     margin: 0;
     overflow-x: hidden;
 }
 
-body{
+body {
     width: 100%;
     padding: 0;
     margin: 0;
     overflow-x: hidden;
 }
 
-.last-btn{
-    border: 3px solid $primary !important;
+.last-btn {
+    border: 3px solid $primary  !important;
 }
 
-.pricing-card-container{
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
-    scrollbar-width: none;  /* Firefox */
+.pricing-card-container {
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    /* Firefox */
 }
 
-.pricing-card-container::-webkit-scrollbar{
+.pricing-card-container::-webkit-scrollbar {
     display: none;
 }
 
-.pricing-cards{
+.pricing-cards {
     min-width: 470px;
 }
 
-.heading-line::before{
+.heading-line::before {
     content: "";
     width: 6rem;
     height: 0.1rem;
@@ -76,7 +92,7 @@ body{
     background-color: rgba(3, 45, 112, 0.304);
 }
 
-.heading-line::after{
+.heading-line::after {
     content: "";
     width: 0.2rem;
     height: 0.2rem;
@@ -86,5 +102,14 @@ body{
     display: block;
     background-color: $primary;
 }
-@import "../node_modules/bootstrap/scss/bootstrap"
 
+.input-group-text {
+    border-left: 0 !important;
+    border-radius: 0 10px 10px 0 !important;
+}
+
+.password-input {
+    border-right: 0 !important;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap"
