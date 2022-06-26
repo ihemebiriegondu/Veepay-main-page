@@ -68,7 +68,7 @@ body {
     border: 3px solid $primary  !important;
 }
 
-.header img{
+.header img {
     padding-top: 5rem;
 }
 
@@ -107,13 +107,20 @@ body {
     background-color: $primary;
 }
 
+.input-group:not(.has-validation)>:not(:last-child):not(.dropdown-toggle):not(.dropdown-menu),
+.input-group:not(.has-validation)>.dropdown-toggle:nth-last-child(n+3) {
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+}
+
 .input-group-text {
-    border-left: 0 !important;
-    border-radius: 0 10px 10px 0 !important;
+    border-width: 3px !important;
+    border-right: 0 !important;
+    border-radius: 10px 0 0 10px !important;
 }
 
 .password-input {
-    border-right: 0 !important;
+    border-left: 0 !important;
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap"
