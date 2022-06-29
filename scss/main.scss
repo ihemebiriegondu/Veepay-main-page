@@ -108,11 +108,11 @@ body {
 
 th:nth-child(even),
 td:nth-child(even) {
-    background-color: rgb(222, 226, 230) !important;
+    background-color: rgba(198, 205, 212, 0.5) !important;
 }
 
 tbody tr:nth-child(odd) {
-    background-color: rgba(222, 226, 230,0.5) !important;
+    background-color: rgba(245, 247, 249, 1) !important;
 }
 
 
