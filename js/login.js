@@ -11,43 +11,59 @@ let validateSignUpForm = () => {
     const emailNoValue = emailNo.value;
     const emailposition = emailNoValue.indexOf("@");
     const emaildotposition = emailNoValue.lastIndexOf(".");
+    const mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     const signupPassword = document.querySelector(".password-input");
     const signupPasswordValue = signupPassword.value;
 
-    if (emailNoValue === "" || signupPasswordValue === "") {
+    if (!emailNoValue && !signupPasswordValue) {
         document.getElementById("remember").style.display = "none";
-        document.getElementById("flexCheckDefault").style.display = "none"
-    }
-
-    if (emailNoValue === "") {
+        document.getElementById("flexCheckDefault").style.display = "none";
+        document.getElementById("forget").style.color = "#dc3545";
         emailNo.classList.add("is-invalid");
         document.getElementById("validationServer03Feedback").style.display = "block";
+        signupPassword.classList.add("is-invalid");
+        document.getElementById("validationServer04Feedback").style.display = "block";
+        document.getElementById("basic-addon1").style.borderColor = "#dc3545";
+        return false;
     }
 
-    if (signupPasswordValue === "") {
+    if (emailNoValue === "" || !emailNo.value.match(mailformat) && signupPasswordValue != "") {
+        emailNo.classList.add("is-invalid");
+        document.getElementById("validationServer03Feedback").style.display = "block";
+        signupPassword.classList.remove("is-invalid");
+        document.getElementById("validationServer04Feedback").style.display = "none";
+        document.getElementById("basic-addon1").style.borderColor = "rgba(115, 126, 145, 0.7)";
+        return false;
+    }
+
+    if (signupPasswordValue === "" && emailNoValue != "") {
         signupPassword.classList.add("is-invalid");
         document.getElementById("validationServer04Feedback").style.display = "block";
         document.getElementById("forget").style.color = "#dc3545";
         document.getElementById("basic-addon1").style.borderColor = "#dc3545";
-    }
-
-    if (emailNoValue != "" && signupPasswordValue === "") {
         emailNo.classList.remove("is-invalid");
         document.getElementById("validationServer03Feedback").style.display = "none";
+        return false
     }
 
-    if (signupPasswordValue != "" && emailNoValue === "") {
+    else {
+        const modalToggler = document.getElementById("modal-toggler");
+        const modalLink = document.getElementById("modal-link");
+
+        document.getElementById("remember").style.display = "block";
+        document.getElementById("flexCheckDefault").style.display = "block";
+        document.getElementById("forget").style.color = "black";
+        emailNo.classList.remove("is-invalid");
+        document.getElementById("validationServer03Feedback").style.display = "none";
         signupPassword.classList.remove("is-invalid");
         document.getElementById("validationServer04Feedback").style.display = "none";
-        document.getElementById("forget").style.color = "#dc3545";
         document.getElementById("basic-addon1").style.borderColor = "rgba(115, 126, 145, 0.7)";
-    };
 
-    if (emailposition < 1 || emaildotposition < emailposition + 2 || emaildotposition + 2 >= emailNo.length) {
-        emailNo.classList.add("is-invalid");
-        document.getElementById("validationServer03Feedback").style.display = "block";
-    };
-
+        modalToggler.dataset.bsToggle = "modal";
+        if (modalToggler.dataset.bsToggle = "modal") {
+            modalLink.setAttribute("href", "./index.html");
+        }
+    }
 };
 
 
