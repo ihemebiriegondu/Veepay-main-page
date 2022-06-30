@@ -36,7 +36,7 @@ $input-focus-box-shadow: none;
 
 $input-group-addon-bg: white;
 
-
+$modal-content-bg: rgba(255, 255, 255, 0.8);
 
 button.navbar-toggler:focus,
 button.navbar-toggler:active,
@@ -106,7 +106,27 @@ body {
     background-color: $primary;
 }
 
-#email-div input, .first-name, .last-name, .p-number, .email {
+th:nth-child(even),
+td:nth-child(even) {
+    background-color: rgba(152, 164, 176, 0.4) !important;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgb(239, 238, 238) !important;
+}
+
+
+
+
+
+
+
+//login/signup
+#email-div input,
+.first-name,
+.last-name,
+.p-number,
+.email {
     border-radius: 10px !important;
 }
 

@@ -30,8 +30,9 @@
 
                 <form class="pt-3 col-7 m-auto" id="signup-form" novalidate onsubmit="return validatingSignUpForm()">
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control form-control-lg w-100 first-name" placeholder="First name"
-                            aria-label="first-name" aria-describedby="basic-addon1" id="validationServer01">
+                        <input type="text" class="form-control form-control-lg w-100 first-name"
+                            placeholder="First name" aria-label="first-name" aria-describedby="basic-addon1"
+                            id="validationServer01">
                     </div>
                     <div class="input-group mb-3">
                         <input type="text" class="form-control form-control-lg w-100 last-name" placeholder="Last name"
@@ -52,7 +53,8 @@
                             aria-describedby="basic-addon5" required>
                     </div>
                     <div class="text-center mt-5">
-                        <button type="submit" class="btn-lg w-25 btn-primary" id="signup-btn">Sign Up</button>
+                        <button type="submit" class="btn-lg w-25 btn-primary" id="modal-toggler"
+                        data-bs-target="#staticBackdrop">Sign Up</button>
                     </div>
                 </form>
                 <div class="col-7 m-auto mt-2 text-center">
@@ -92,7 +94,7 @@
             class="left col-5 ps-5 mt-5 d-flex flex-column justify-content-center align-items-center align-self-center text-center pe-5">
             <div id="error">
                 <i class="bi bi-exclamation-circle-fill text-danger me-3"></i>
-                <p class="pt-2">hguiehru</p>
+                <p class="pt-2"></p>
             </div>
             <div class="copy pe-5 my-auto mt-5">
                 <h5 class="h3 ps-5 mb-4">Already Signed Up?</h5>
@@ -104,6 +106,28 @@
             </div>
         </article>
     </section>
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <a id="modal-link" class="text-decoration-none" href="">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-body d-flex flex-column align-items-center justify-content-center">
+                        <div>
+                            <i class="bi bi-check-circle-fill text-success display-1"></i>
+                        </div>
+                        <div class="my-3">
+                            <p class="text-primary display-3 fw-bold">Sign Up Successful</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center text-dark">
+                            <p class="h5 me-1">Explore!</p>
+                            <i class="bi bi-hand-thumbs-up-fill h5"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"

@@ -21,42 +21,92 @@ let validatingSignUpForm = () => {
     const signupPasswordValue = signupPassword.value;
 
 
-
-    if (emailValue === "" || signupPasswordValue === "" || firstNameValue === "" || lastNameValue === "" || phoneNumberValue === "") {
+    if (!firstNameValue && !lastNameValue && !emailValue && !phoneNumberValue && !signupPasswordValue) {
         document.getElementById("error").style.display = "flex";
-        document.querySelector("#error p").textContent = "No information provided";
+        document.querySelector("#error p").textContent = "No information added";
+        setTimeout(hideError, 1000)
+        function hideError() {
+            document.getElementById("error").style.display = "none";
+            document.querySelector("#error p").textContent = "";
+        }
+        return false;
     }
 
-    if (emailValue === "" && signupPasswordValue != "" && firstNameValue != "" && lastNameValue != "" && phoneNumberValue != "") {
+    if (firstNameValue == "") {
+        document.getElementById("error").style.display = "flex";
+        document.querySelector("#error p").textContent = "No FirstName added";
+        setTimeout(hideError, 1000)
+        function hideError() {
+            document.getElementById("error").style.display = "none";
+            document.querySelector("#error p").textContent = "";
+        }
+        return false;
+    }
+
+    if (lastNameValue == "") {
+        document.getElementById("error").style.display = "flex";
+        document.querySelector("#error p").textContent = "No LastName added";
+        setTimeout(hideError, 1000)
+        function hideError() {
+            document.getElementById("error").style.display = "none";
+            document.querySelector("#error p").textContent = "";
+        }
+        return false;
+    }
+
+    if (emailValue == "") {
         document.getElementById("error").style.display = "flex";
         document.querySelector("#error p").textContent = "Add email address";
+        setTimeout(hideError, 1000)
+        function hideError() {
+            document.getElementById("error").style.display = "none";
+            document.querySelector("#error p").textContent = "";
+        }
+        return false;
     }
 
-    if (signupPasswordValue === "" && emailValue != "" && firstNameValue != "" && lastNameValue != "" && phoneNumberValue != "") {
-        document.getElementById("error").style.display = "flex";
-        document.querySelector("#error p").textContent = "No password added";
-    }
-
-    if (firstNameValue === "" && signupPasswordValue != "" && emailValue != "" && lastNameValue != "" && phoneNumberValue != "") {
-        document.getElementById("error").style.display = "flex";
-        document.querySelector("#error p").textContent = "No FirstName added";
-    }
-
-    if (lastNameValue === "" && firstNameValue != "" && signupPasswordValue != "" && emailValue != "" && phoneNumberValue != "") {
-        document.getElementById("error").style.display = "flex";
-        document.querySelector("#error p").textContent = "No FirstName added";
-    }
-
-    if (phoneNumberValue === "" && firstNameValue != "" && signupPasswordValue != "" && emailValue != "" && lastNameValue != "") {
-        document.getElementById("error").style.display = "flex";
-        document.querySelector("#error p").textContent = "No FirstName added";
-    }
-
-    /*if (firstNameValue != "" && lastNameValue != "" && emailValue != "" && emailposition < 1 || emaildotposition < emailposition + 2 || emaildotposition + 2 >= email.length) {
+    if (emailposition < 1 || emaildotposition < emailposition + 2 || emaildotposition + 2 >= email.length) {
         document.getElementById("error").style.display = "flex";
         document.querySelector("#error p").textContent = "Enter valid email";
-    };*/
+        setTimeout(hideError, 1000)
+        function hideError() {
+            document.getElementById("error").style.display = "none";
+            document.querySelector("#error p").textContent = "";
+        }
+        return false;
+    }
 
+    if (phoneNumberValue == "") {
+        document.getElementById("error").style.display = "flex";
+        document.querySelector("#error p").textContent = "No Phone number added";
+        setTimeout(hideError, 1000)
+        function hideError() {
+            document.getElementById("error").style.display = "none";
+            document.querySelector("#error p").textContent = "";
+        }
+        return false;
+    }
+
+    if (signupPasswordValue == "") {
+        document.getElementById("error").style.display = "flex";
+        document.querySelector("#error p").textContent = "No password added";
+        setTimeout(hideError, 1000)
+        function hideError() {
+            document.getElementById("error").style.display = "none";
+            document.querySelector("#error p").textContent = "";
+        }
+        return false;
+    }
+
+    else {
+        const modalToggler = document.getElementById("modal-toggler");
+        const modalLink = document.getElementById("modal-link");
+
+        modalToggler.dataset.bsToggle = "modal";
+        if (modalToggler.dataset.bsToggle = "modal") {
+            modalLink.setAttribute("href", "./index.html");
+        }
+    }
 };
 
 
