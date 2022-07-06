@@ -14,6 +14,8 @@ $card-border-width: 0;
 
 $box-shadow: 0 2px 5px rgba(152, 147, 147, 0.7);
 
+$nav-tabs-border-width: 0;
+
 $accordion-border-width: 0;
 
 $accordion-icon-color: rgba(75, 88, 109, 0.582);
@@ -37,14 +39,6 @@ $input-focus-box-shadow: none;
 $input-group-addon-bg: white;
 
 $modal-content-bg: rgba(255, 255, 255, 0.8);
-
-$nav-tabs-border-width: 0;
-$nav-tabs-border-radius: 0;
-$nav-tabs-link-hover-border-color: black;
-$nav-tabs-link-active-color: black;
-$nav-tabs-link-active-border-color: transparent;
-
-
 
 button.navbar-toggler:focus,
 button.navbar-toggler:active,
@@ -114,7 +108,8 @@ body {
     background-color: $primary;
 }
 
-table, .tab-pane{
+table,
+.tab-pane {
     outline: none !important;
 }
 
@@ -132,7 +127,8 @@ tbody tr:nth-child(odd) {
     margin: 0 1rem 0 1rem !important;
 }
 
-.nav-tabs-link:active {
+.nav-tabs-link.active,
+.nav-item.show .nav-tabs-link {
     outline: none !important;
     border-bottom: 2px solid rgb(3, 45, 112) !important;
     font-weight: 700 !important;
@@ -168,4 +164,4 @@ tbody tr:nth-child(odd) {
     border-left: 0 !important;
 }
 
-@import "../node_modules/bootstrap/scss/bootstrap"
+@import "../node_modules/bootstrap/scss/bootstrap";
