@@ -35,6 +35,7 @@ $input-focus-color: black;
 $input-focus-width: 3px;
 $input-focus-box-shadow: none;
 
+$form-select-focus-box-shadow: none;
 
 $input-group-addon-bg: white;
 
@@ -141,12 +142,16 @@ tbody tr:nth-child(odd) {
 }
 
 
-//login/signup
+//login/signup/sme data
 #email-div input,
 .first-name,
 .last-name,
 .p-number,
-.email {
+.email,
+.phonenumber,
+.amount,
+#network,
+#datavalue {
     border-radius: 10px !important;
 }
 
@@ -163,5 +168,19 @@ tbody tr:nth-child(odd) {
 .password-input {
     border-left: 0 !important;
 }
+
+
+.disabledBtn {
+    border: none !important;
+    border-radius: 10px 10px 10px 0 !important;
+}
+
+.disabledBtn:focus,
+.disabledBtn:active {
+    outline: none;
+    border: none;
+}
+
+
 
 @import "../node_modules/bootstrap/scss/bootstrap";
