@@ -114,6 +114,10 @@ body {
     background-color: $primary;
 }
 
+table, .tab-pane{
+    outline: none !important;
+}
+
 .th:nth-child(even),
 .td:nth-child(even) {
     background-color: rgba(152, 164, 176, 0.4) !important;
@@ -128,8 +132,8 @@ tbody tr:nth-child(odd) {
     margin: 0 1rem 0 1rem !important;
 }
 
-.nav-tabs-link:active::after,
-.nav-tabs-link:focus{
+.nav-tabs-link:active {
+    outline: none !important;
     border-bottom: 2px solid rgb(3, 45, 112) !important;
     font-weight: 700 !important;
 }
