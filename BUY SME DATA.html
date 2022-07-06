@@ -9,23 +9,24 @@
 
     <link rel="stylesheet" href="./css/main.min.css">
     <link rel="stylesheet" href="./other css//Smedata.css">
-    <link rel="stylesheet" href="https://path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="./images/20220607_140201.jpg" type="image/x-icon">
 </head>
 
 <body>
     <!-- logo on header -->
-    <div class="head">
-        <nav>
-            <a href="./index.html">
+    <nav class="navbar navbar-expand-lg bg-white navbar-light pt-3">
+        <div class="container-fluid m-auto ms-0 ps-0">
+            <a class="navbar-brand" href="./index.html">
                 <img src="./images/Veepay Logo Png.png" alt="">
             </a>
-        </nav>
-    </div>
+        </div>
+    </nav>
+
     <main>
         <h5>
-            <a href=""><img class="logo" src="images/Frame 13.png"></a>
+            <a href="./index.html"><img class="logo ms-5" src="images/Frame 13.png"></a>
         </h5>
-        <h2><b>BUY SME DATA</b></h2>
+        <h2 class="mt-5"><b>BUY SME DATA</b></h2>
         <div class="container-form">
             <form class="" id="signup-form" novalidate onsubmit="return validateSmePurchase()">
                 <div class="custom-select mb-4" style="width: 100%;">
@@ -55,7 +56,7 @@
                     </select>
                 </div>
 
-                <div class="input-group mb-4">
+                <div class="input-group mb-5">
                     <label for="amount">Amount</label>
                     <input type="text" name="text" class="form-control amount form-control-lg" placeholder=""
                         aria-label="phonenumber">
@@ -67,13 +68,12 @@
             </form>
         </div>
         <div>
-            <footer>
-                <!-- Footer Details -->
-                <div>
-                    <p>©2022 Copyright.Veepay</p>
+            <div class="footer row bg-light">
+                <div class="copyright py-2 bg-primary text-white text-center col-12">
+                    <p class="my-2 fst-italic fs-6">&copy; 2022 Copyright. Veepay</p>
                 </div>
-
-            </footer>
+            </div>
+        
         </div>
     </main>
     <script src="./js/index.js"></script>

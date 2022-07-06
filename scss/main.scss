@@ -151,7 +151,11 @@ tbody tr:nth-child(odd) {
 .phonenumber,
 .amount,
 #network,
-#datavalue {
+#datavalue,
+.sender,
+.recipient,
+.subject
+ {
     border-radius: 10px !important;
 }
 

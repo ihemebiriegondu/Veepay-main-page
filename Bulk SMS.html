@@ -1,46 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div class="Bulk SMS">
-        <img class="logo" src="" alt="">
-        <div class="login">
-            <h2>BULK SMS</h2>
-            <form class="User details" action="post">
-                  </form>
-            </form>
-            <p></p>
-            <!-- icons -->
-    </div>
-</body>
-</html>
+    <title>BUlk SMS</title>
 
-<form class="User details" action="post"> <br/><br/>
-    <label for="Sender">Sender</label><br/>          
-    <input type="Name"name="Name"placeholder="Name"/></br><br/>
-    <label for="Recipient">Recipient</label></br>
-    <input type="Name"name="Name"placeholder="Name"/></br><br/>
-    <label for="Subject">Subject</label></br>
-    <input type="Write"name="Write"placeholder="Write"/></br><br/>
-    <label for="SMS Body">SMS Body</label></br>
-    <input type="Type your message"name="Type your message"placeholder="Type your message"/>
-</div>
-            <h5>Send</h5>
-        </form>
-        <input type="checkbox" value="Immediately" 
-        id="Immediately"> <label 
-        for="Immediately">Immediately</label></br><br/>
-    </form>
-    <input type="checkbox" value="Schedule" 
-    id="Schedule"> <label 
-    for="Schedule">Schedule</label></br><br/>
-    </form>
-    <input type="submit" value="Send">
-    </form>
-             </div>
-<p></p>
+    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./other css//Smedata.css">
+    <link rel="shortcut icon" href="./images/20220607_140201.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <!-- logo on header -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light pt-3">
+        <div class="container-fluid m-auto ms-0 ps-0">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./images/Veepay Logo Png.png" alt="">
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <h5>
+            <a href="./index.html"><img class="logo ms-5" src="images/Frame 13.png"></a>
+        </h5>
+        <h2 class="mt-5"><b>Bulk SMS</b></h2>
+        <div class="container-form">
+            <form class="" id="signup-form" novalidate onsubmit="return validateSmePurchase()">
+                <div class="input-group mb-4">
+                    <label for="sender">Sender</label>
+                    <input type="text" name="text" class="form-control sender form-control-lg"
+                        placeholder="input Sender or Organization name" aria-label="sender">
+                </div>
+
+                <div class="input-group mb-4">
+                    <label for="recipient">Recipient</label>
+                    <input type="text" name="text" class="form-control recipient form-control-lg"
+                        placeholder="input Numbers or select other options" aria-label="recipient">
+                </div>
+
+                <div class="input-group mb-4">
+                    <label for="recipient">Subject</label>
+                    <input type="text" name="text" class="form-control subject form-control-lg"
+                        placeholder="input Numbers or select other options" aria-label="subject">
+                </div>
+
+                <div>
+                    <label for="sms-body">SMS Body</label>
+                    <textarea name="" id="" cols="30" rows="10">
+                        
+                    </textarea>
+                </div>                
+
+                <div id="container">
+                    <button type="submit" class="btn btn-primary btn-lg disabledBtn"><b>Send</b></button>
+                </div>
+            </form>
+        </div>
+        <div>
+            <div class="footer row bg-light">
+                <div class="copyright py-2 bg-primary text-white text-center col-12">
+                    <p class="my-2 fst-italic fs-6">&copy; 2022 Copyright. Veepay</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <script src="./js/index.js"></script>
+</body>
