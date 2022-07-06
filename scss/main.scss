@@ -38,6 +38,14 @@ $input-group-addon-bg: white;
 
 $modal-content-bg: rgba(255, 255, 255, 0.8);
 
+$nav-tabs-border-width: 0;
+$nav-tabs-border-radius: 0;
+$nav-tabs-link-hover-border-color: black;
+$nav-tabs-link-active-color: black;
+$nav-tabs-link-active-border-color: transparent;
+
+
+
 button.navbar-toggler:focus,
 button.navbar-toggler:active,
 button.navbar-toggler-icon:focus {
@@ -106,8 +114,8 @@ body {
     background-color: $primary;
 }
 
-th:nth-child(even),
-td:nth-child(even) {
+.th:nth-child(even),
+.td:nth-child(even) {
     background-color: rgba(152, 164, 176, 0.4) !important;
 }
 
@@ -115,10 +123,22 @@ tbody tr:nth-child(odd) {
     background-color: rgb(239, 238, 238) !important;
 }
 
+.nav-tabs-link {
+    padding: 0.5rem 0 0 0 !important;
+    margin: 0 1rem 0 1rem !important;
+}
 
+.nav-tabs-link:active::after,
+.nav-tabs-link:focus{
+    border-bottom: 2px solid rgb(3, 45, 112) !important;
+    font-weight: 700 !important;
+}
 
-
-
+.vl {
+    border-left: 2px solid black;
+    margin-top: 0.7rem;
+    height: 24px;
+}
 
 
 //login/signup
