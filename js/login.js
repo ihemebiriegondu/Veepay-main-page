@@ -61,7 +61,7 @@ let validateSignUpForm = () => {
 
         modalToggler.dataset.bsToggle = "modal";
         if (modalToggler.dataset.bsToggle = "modal") {
-            modalLink.setAttribute("href", "./index.html");
+            modalLink.setAttribute("href", "./dashboard.html");
         }
     }
 };
