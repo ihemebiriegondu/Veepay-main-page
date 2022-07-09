@@ -37,6 +37,8 @@ $input-focus-box-shadow: none;
 
 $form-select-focus-box-shadow: none;
 
+$form-check-input-bg: transparent;
+
 $input-group-addon-bg: white;
 
 $modal-content-bg: rgba(255, 255, 255, 0.8);
@@ -129,10 +131,24 @@ tbody tr:nth-child(odd) {
 }
 
 .nav-tabs-link.active,
-.nav-item.show .nav-tabs-link {
+.nav-tabs-item.show .nav-tabs-link {
     outline: none !important;
     border-bottom: 2px solid rgb(3, 45, 112) !important;
     font-weight: 700 !important;
+}
+
+.dash-nav-link {
+    background-color: transparent !important;
+    color: #495057 !important;
+}
+
+.dash-nav-link.active,
+.dash-nav-link.show .dash-nav-link {
+    outline: none !important;
+    background-color: transparent !important;
+    color: black !important;
+    border-left: 5px solid $primary  !important;
+    border-radius: 0 !important;
 }
 
 .vl {
@@ -141,6 +157,10 @@ tbody tr:nth-child(odd) {
     height: 24px;
 }
 
+.robot {
+    border: 2px solid $primary !important;
+    border-radius: 0 !important;
+}
 
 //login/signup/sme data
 #email-div input,
@@ -154,8 +174,7 @@ tbody tr:nth-child(odd) {
 #datavalue,
 .sender,
 .recipient,
-.subject
- {
+.subject {
     border-radius: 10px !important;
 }
 
