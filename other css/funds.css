@@ -1,0 +1,33 @@
+body {
+    background-color: #CFD7E4;
+    overflow-x: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.home-page h5 {
+    display: inline;
+    color: #292929;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.arrow {
+    width: 12px;
+    margin-top: -7px;
+    margin-right: 3px;
+}
+
+main{
+    padding: 2rem 4rem 4rem 4rem;
+}

@@ -162,6 +162,11 @@ tbody tr:nth-child(odd) {
     border-radius: 0 !important;
 }
 
+.profile input{
+    background-color: transparent !important;
+    border: 2px solid $primary !important;
+}
+
 //login/signup/sme data
 #email-div input,
 .first-name,

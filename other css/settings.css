@@ -24,7 +24,7 @@ a {
     margin-top: 2rem;
 }
 
-.dash-nav-link{
+.dash-nav-link {
     font-weight: 700;
 }
 
@@ -139,17 +139,6 @@ h5 {
     font-size: 20px;
 }
 
-footer {
-    background: #0E387A;
-    font-size: 13px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    color: white;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 0;
-}
-
 .header {
     background: white;
     width: 100%;
@@ -209,7 +198,7 @@ label {
     outline: none;
 }
 
-.btn {
+.btnh {
     display: block;
     background-color: #0E387A;
     padding: 12px 12%;
@@ -223,8 +212,27 @@ label {
     font-weight: 600;
 }
 
-.btn:hover {
+.btnh:hover {
     background-color: rgba(4, 56, 122, 0.9);
+}
+
+.accordion {
+    width: 60rem;
+    margin-top: 2rem;
+}
+
+.profile {
+    width: 64rem;
+}
+
+.profile1 {
+    background-color: white;
+    padding: 2.5rem;
+}
+
+.camera {
+    position: absolute;
+    left: 23rem;
 }
 
 @media screen and (min-width: 980px) {
