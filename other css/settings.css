@@ -1,5 +1,5 @@
 body {
-    background-color: #CFD7E4;
+    background-color: rgb(221, 231, 248);
     overflow-x: hidden;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -31,7 +31,7 @@ a {
 .home-page h5 {
     display: inline;
     color: #292929;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
 }
 

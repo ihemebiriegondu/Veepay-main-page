@@ -1,5 +1,5 @@
 body {
-    background-color: #cacdd0;
+    background-color: rgb(221, 231, 248);
     width: 100%;
 }
 
@@ -29,7 +29,7 @@ a{
 .home-page h5 {
     display: inline;
     color: #292929;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
 }
 
@@ -104,6 +104,7 @@ button {
     width: 100%;
     text-align: center;
 }
+
 
 @media screen and (min-width: 980px) {
     .wrapper {

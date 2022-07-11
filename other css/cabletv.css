@@ -12,7 +12,7 @@
     font-family:'Montserrat' , sans-serif;
 }
 body{
-    background-color:#CFD7E4;
+    background-color:rgb(221, 231, 248);
 }
 header {
     background-color:#ffff;
@@ -30,7 +30,7 @@ header {
 .home-page h5{
     display: inline;
     color: #292929;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
 }
  
@@ -48,11 +48,9 @@ header {
 }
 .cablesub{
     max-width:70%;
-    margin:1rem auto;
-    background-color:#CFD7E4;
+    margin:1rem auto 3rem auto;
     min-height: 100vh;
     padding-top: 2rem;
-
 
 }
 .container{
@@ -110,7 +108,7 @@ a{
     text-align: center;
     color:#ffff;
     padding: 20px 8px;
-    font-size:15px;
+    font-size:14px;
 }
 
 @media only screen and (min-width: 310px) and (max-width:580px){
