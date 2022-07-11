@@ -1,24 +1,37 @@
 const firstPassword = document.getElementById("validationServer01");
 const secondPassword = document.getElementById("validationServer02");
+const forgetSubmitBtn = document.querySelector(".forget-submit");
 
 var form = document.querySelector("form");
 
 function handleForm(event) { event.preventDefault(); }
 form.addEventListener('submit', handleForm);
 let validateCreatePasswordForm = () => {
-    const forgetSubmitBtn = document.getElementById("forget-submit");
-    if (firstPassword.value != secondPassword.value) {
+    if (firstPassword.value !== "" && secondPassword.value !== "" && firstPassword.value != secondPassword.value) {
         document.getElementById("validationServer02Feedback").style.display = "block";
         secondPassword.classList.add("is-invalid");
         document.getElementById("basic-addon2").style.borderColor = "#dc3545";
+        forgetSubmitBtn.classList.add("disabled");
+        forgetSubmitBtn.innerHTML = `Submit`;
     } else {
-        forgetSubmitBtn.setAttribute("href", "./forget-password4.html");
         document.getElementById("validationServer02Feedback").style.display = "none";
         secondPassword.classList.remove("is-invalid");
         document.getElementById("basic-addon2").style.borderColor = "rgba(115, 126, 145, 0.7)";
-        window.open("./forget-password4.html")
+        forgetSubmitBtn.innerHTML = `<a class="w-75 py-2 text-white" href="./forget-password4.html" id="">Submit</a>`;
     }
 }
+const selects = document.querySelectorAll(".selects");
+
+selects.forEach(select => {
+    let removeDisabledSelect = () => {
+        if (select === document.activeElement && forgetSubmitBtn.classList.contains("disabled")) {
+            forgetSubmitBtn.classList.remove("disabled");
+            phoneNumber.classList.remove("is-invalid");
+            document.getElementById("validationServer01Feedback").style.display = "none";
+        }
+    };
+    select.addEventListener("focus", removeDisabledSelect);
+});
 
 const eyeIcon1 = document.querySelector(".password1");
 let togglePassword1 = () => {
