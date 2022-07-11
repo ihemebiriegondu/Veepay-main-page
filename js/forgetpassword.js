@@ -7,7 +7,7 @@ var form = document.querySelector("form");
 function handleForm(event) { event.preventDefault(); }
 form.addEventListener('submit', handleForm);
 let validateCreatePasswordForm = () => {
-    if (firstPassword.value !== "" && secondPassword.value !== "" && firstPassword.value != secondPassword.value) {
+    if (firstPassword.value === "" || secondPassword.value === "" || firstPassword.value != secondPassword.value) {
         document.getElementById("validationServer02Feedback").style.display = "block";
         secondPassword.classList.add("is-invalid");
         document.getElementById("basic-addon2").style.borderColor = "#dc3545";
@@ -26,7 +26,6 @@ selects.forEach(select => {
     let removeDisabledSelect = () => {
         if (select === document.activeElement && forgetSubmitBtn.classList.contains("disabled")) {
             forgetSubmitBtn.classList.remove("disabled");
-            phoneNumber.classList.remove("is-invalid");
             document.getElementById("validationServer01Feedback").style.display = "none";
         }
     };
