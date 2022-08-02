@@ -257,6 +257,10 @@ tbody tr:nth-child(odd) {
     .feed {
         font-size: 1.7rem !important;
     }
+
+    .dashboard-testimonial img {
+        margin-left: -9rem;
+    }
 }
 
 @media (max-width: 920px) {
@@ -268,14 +272,27 @@ tbody tr:nth-child(odd) {
 
         .testimonial-img-div {
             height: 100%;
-            
+
 
             img {
                 height: 100%;
                 width: 100%;
                 object-fit: cover;
             }
+        }
+    }
 
+    .dashboard-testimonial {
+
+        .testimonial-img-div {
+            height: 100%;
+
+            img {
+                margin-left: -4rem;
+                height: 100%;
+                width: 115%;
+                object-fit: cover;
+            }
         }
     }
 }
@@ -289,6 +306,15 @@ tbody tr:nth-child(odd) {
 
         img {
             height: 30rem;
+        }
+    }
+
+    .dashboard-testimonial {
+        img {
+            margin-left: 0;
+            height: 100%;
+            width: 115%;
+            object-fit: cover;
         }
     }
 
