@@ -74,8 +74,8 @@ body {
     border: 3px solid $primary  !important;
 }
 
-.header img {
-    padding-top: 5rem;
+.feed {
+    font-size: calc(1rem + 1.5vw)
 }
 
 .pricing-card-container {
@@ -109,6 +109,48 @@ body {
     margin: -0.25rem auto 3rem auto;
     display: block;
     background-color: $primary;
+}
+
+.ellipse1 {
+    box-sizing: border-box;
+    position: absolute;
+    width: 617px;
+    height: 613.51px;
+    right: 50px;
+    top: 150px;
+    z-index: 0;
+    border-radius: 50%;
+    border: 1.16415px solid rgba(14, 56, 122, 0.2);
+}
+
+.ellipse2 {
+    box-sizing: border-box;
+    position: absolute;
+    width: 567px;
+    height: 563.8px;
+    right: 75px;
+    top: 180px;
+    border-radius: 50%;
+    border: 1.06981px solid rgba(14, 56, 122, 0.2);
+}
+
+.btn.two {
+    display: inline-block !important;
+}
+
+.testimonial {
+    .d-flex {
+        height: 30rem;
+    }
+
+    .testimonial-img-div {
+        height: 100%;
+
+        img {
+            height: 100%;
+            object-fit: contain;
+        }
+    }
 }
 
 table,
@@ -158,13 +200,13 @@ tbody tr:nth-child(odd) {
 }
 
 .robot {
-    border: 2px solid $primary !important;
+    border: 2px solid $primary  !important;
     border-radius: 0 !important;
 }
 
-.profile input{
+.profile input {
     background-color: transparent !important;
-    border: 2px solid $primary !important;
+    border: 2px solid $primary  !important;
 }
 
 //login/signup/sme data
@@ -209,6 +251,69 @@ tbody tr:nth-child(odd) {
     border: none;
 }
 
+
+
+@media (max-width: 1200px) {
+    .feed {
+        font-size: 1.7rem !important;
+    }
+}
+
+@media (max-width: 920px) {
+    .testimonial {
+
+        .d-flex {
+            height: 30rem;
+        }
+
+        .testimonial-img-div {
+            height: 100%;
+            
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonial {
+
+        .d-flex {
+            height: auto;
+        }
+
+        img {
+            height: 30rem;
+        }
+    }
+
+    .feed {
+        font-size: 1.5rem !important;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .feed {
+        font-size: 1.3rem !important;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .navbar-brand img {
+        margin-left: -1rem;
+    }
+
+    .feed {
+        font-size: 1.2rem !important;
+    }
+}
 
 
 @import "../node_modules/bootstrap/scss/bootstrap";
