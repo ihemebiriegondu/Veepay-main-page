@@ -18,7 +18,6 @@ body:before {
   bottom: 0;
   right: 0;
   width: 45%;
-  height: 100%;
   background: rgb(221, 231, 248);
   transform: skew(10deg);
   transform-origin: top;
@@ -44,13 +43,14 @@ body:before {
   padding: 0 1rem;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
   html {
     height: 100%;
   }
 
   body {
     background-color: rgb(221, 231, 248);
+    height: 100%;
   }
 
   body:before {
@@ -61,6 +61,7 @@ body:before {
     bottom: 0;
     left: 0;
     width: 100%;
+    height: auto;
     background: rgb(221, 231, 248);
     transform: skew(0);
     transform-origin: top;
@@ -69,6 +70,11 @@ body:before {
   .navbar-brand {
     background-color: white;
     margin: 0 !important;
+    position: fixed;
+    top: 0;
+    z-index: 4;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    width: 100%;
   }
 
   .navbar-brand i:hover{

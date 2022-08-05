@@ -55,6 +55,11 @@ body:before {
   .navbar-brand {
     background-color: white;
     margin: 0 !important;
+    position: fixed;
+    top: 0;
+    z-index: 4;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    width: 100%;
   }
 
   .navbar-brand i:hover{
