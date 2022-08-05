@@ -1,32 +1,80 @@
 :root {
-    font-size: 100%;
-    font-size: 16px;
-    line-height: 0.4rem;
+  font-size: 100%;
+  font-size: 16px;
+  line-height: 0.4rem;
 }
 
 body {
+  height: 100%;
+  margin: 0;
+  background: white;
+}
+
+body:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 45%;
+  background: rgb(221, 231, 248);
+  transform: skew(-10deg);
+  transform-origin: top;
+}
+
+.logins-icons {
+  border: 1px solid rgba(131, 160, 188, 0.9);
+  border-radius: 5px;
+  padding: 0 15px;
+  margin: 1rem;
+}
+
+@media (max-width: 991px) {
+  html {
     height: 100%;
-    margin: 0;
-    background: white;
   }
-  
+
+  body {
+    background-color: rgb(221, 231, 248);
+  }
+
   body:before {
     content: "";
-    position: absolute;
+    position: static;
     z-index: -1;
     top: 0;
     bottom: 0;
     left: 0;
-    width: 45%;
+    width: 100%;
     background: rgb(221, 231, 248);
-    transform: skew(-10deg);
-    transform-origin:top;
+    transform: skew(0);
+    transform-origin: top;
   }
 
-  .logins-icons{
-    border: 1px solid rgba(131, 160, 188, 0.9);
-    border-radius: 5px;
-    padding: 0 15px;
-    margin: 1rem;
+  .navbar-brand {
+    background-color: white;
+    margin: 0 !important;
   }
 
+  .navbar-brand i:hover{
+    cursor: pointer;
+  }
+
+  .split-screen {
+    display: block !important;
+    padding-top: 3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #modal-toggler {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .sign-up-div {
+    width: 80% !important;
+  }
+}

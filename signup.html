@@ -16,96 +16,109 @@
 </head>
 
 <body class="body">
-    <a class="navbar-brand" href="./index.html">
-        <img src="./images/Veepay Logo Png.png" alt="" class="mt-4">
-    </a>
-    <section class="split-screen row row-cols-2">
-        <article
-            class="right mt-4 col-7 d-flex flex-column justify-content-center align-items-center align-self-center">
-            <div class="col-12">
-                <div class="mb-1">
-                    <h2 class="text-primary text-center">Sign up for an Account</h2>
-                    <hr class="m-auto" style="width: 60px; height: 2.5px; color: rgb(1, 17, 33);">
-                </div>
+    <div class="navbar-brand d-lg-inline d-flex justify-content-between align-items-center shadow fixed-top">
+        <i class="bi bi-arrow-left-short fs-1 ms-4 d-lg-none d-block cursor-pointer" onclick="history.back()"></i>
+        <a class="" href="./index.html">
+            <img src="./images/Veepay Logo Png.png" alt="" class="mt-lg-4">
+        </a>
+    </div>
 
-                <form class="pt-3 col-7 m-auto" id="signup-form" novalidate onsubmit="return validatingSignUpForm()">
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control form-control-lg w-100 first-name"
-                            placeholder="First name" aria-label="first-name" aria-describedby="basic-addon1"
-                            id="validationServer01">
+    <div class="d-flex flex-column justify-content-center m-auto h-100 mt-lg-0 mt-5 pt-lg-0 pt-5">
+        <section class="split-screen row row-cols-2 mt-lg-0 mt-5">
+            <article
+                class="right mt-lg-4 col-lg-7 col-sm-9 col-11 d-flex m-lg-0 m-auto flex-column justify-content-center align-items-center align-self-center">
+                <div class="col-12">
+                    <div class="mb-lg-1 mb-5 mt-lg-0 mt-5">
+                        <h2 class="text-primary text-center">Sign up for an Account</h2>
+                        <hr class="m-auto" style="width: 60px; height: 2.5px; color: rgb(1, 17, 33);">
                     </div>
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control form-control-lg w-100 last-name" placeholder="Last name"
-                            aria-label="last-name" aria-describedby="basic-addon2" id="validationServer02">
-                    </div>
-                    <div class="input-group mb-3">
-                        <input type="email" class="form-control form-control-lg w-100 email" placeholder="Email"
-                            aria-label="email" aria-describedby="basic-addon3" id="validationServer03">
-                    </div>
-                    <div class="input-group mb-3">
-                        <input type="tel" class="form-control form-control-lg w-100 p-number" placeholder="Phone Number"
-                            aria-label="phone number" aria-describedby="basic-addon4" id="validationServer04">
-                    </div>
-                    <div class="input-group mb-3" id="passwordsignup">
-                        <span class="input-group-text" id="basic-addon5"><i class="bi bi-eye"></i></span>
-                        <input type="password" class="password-input form-control form-control-lg"
-                            placeholder="Password" aria-label="password" id="validationServer05"
-                            aria-describedby="basic-addon5" required>
-                    </div>
-                    <div class="text-center mt-5">
-                        <button type="submit" class="btn-lg w-25 btn-primary" id="modal-toggler"
-                        data-bs-target="#staticBackdrop">Sign Up</button>
-                    </div>
-                </form>
-                <div class="col-7 m-auto mt-2 text-center">
-                    <div class="d-flex mt-4 align-items-center justify-content-center">
-                        <div class="me-2"
-                            style="width: 60px; height: 2.5px; background-color: rgba(131, 160, 188, 0.9); margin-top: -1rem;">
+
+                    <form class="pt-3 col-lg-7 col-12 m-auto" id="signup-form" novalidate
+                        onsubmit="return validatingSignUpForm()">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control form-control-lg w-100 first-name"
+                                placeholder="First name" aria-label="first-name" aria-describedby="basic-addon1"
+                                id="validationServer01">
                         </div>
-                        <p class="d-block">Or sign in using</p>
-                        <div class="ms-2"
-                            style="width: 60px; height: 2.5px; background-color: rgba(131, 160, 188, 0.9); margin-top: -1rem;">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control form-control-lg w-100 last-name"
+                                placeholder="Last name" aria-label="last-name" aria-describedby="basic-addon2"
+                                id="validationServer02">
                         </div>
-                    </div>
-                    <footer>
-                        <!--Social Media Icons-->
-                        <div class="d-flex justify-content-center px-5">
-                            <div class="logins-icons">
-                                <a href="">
-                                    <img src="./images/icons8-google-48.png" alt="" width="25">
-                                </a>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control form-control-lg w-100 email" placeholder="Email"
+                                aria-label="email" aria-describedby="basic-addon3" id="validationServer03">
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="tel" class="form-control form-control-lg w-100 p-number"
+                                placeholder="Phone Number" aria-label="phone number" aria-describedby="basic-addon4"
+                                id="validationServer04">
+                        </div>
+                        <div class="input-group mb-3" id="passwordsignup">
+                            <span class="input-group-text" id="basic-addon5"><i class="bi bi-eye"></i></span>
+                            <input type="password" class="password-input form-control form-control-lg shadow-none"
+                                placeholder="Password" aria-label="password" id="validationServer05"
+                                aria-describedby="basic-addon5" required>
+                        </div>
+                        <div class="text-center mt-5">
+                            <button type="submit" class="btn-lg w-50 btn-primary" id="modal-toggler"
+                                data-bs-target="#staticBackdrop">Sign Up</button>
+                        </div>
+                    </form>
+                    <div class="col-7 m-auto mt-2 text-center login-up-div">
+                        <div class="d-flex mt-4 align-items-center justify-content-center">
+                            <div class="me-2"
+                                style="width: 60px; height: 2.5px; background-color: rgba(131, 160, 188, 0.9); margin-top: -1rem;">
                             </div>
-                            <div class="logins-icons">
-                                <a href="">
-                                    <img src="./images/facebook-svgrepo-com.svg" alt="" width="20">
-                                </a>
-                            </div>
-                            <div class="logins-icons">
-                                <a href="">
-                                    <i class="bi bi-apple h5 text-dark"></i>
-                                </a>
+                            <p class="d-block">Or sign in using</p>
+                            <div class="ms-2"
+                                style="width: 60px; height: 2.5px; background-color: rgba(131, 160, 188, 0.9); margin-top: -1rem;">
                             </div>
                         </div>
-                    </footer>
+                        <footer>
+                            <!--Social Media Icons-->
+                            <div class="d-flex justify-content-center px-5">
+                                <div class="logins-icons">
+                                    <a href="">
+                                        <img src="./images/icons8-google-48.png" alt="" width="25">
+                                    </a>
+                                </div>
+                                <div class="logins-icons">
+                                    <a href="">
+                                        <img src="./images/facebook-svgrepo-com.svg" alt="" width="20">
+                                    </a>
+                                </div>
+                                <div class="logins-icons">
+                                    <a href="">
+                                        <i class="bi bi-apple h5 text-dark"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </footer>
+                        <div class="d-lg-none d-block mt-5 mb-5">
+                            <p>Already have an Account? <a href="./login.html" class="text-decoration-none">Login</a>
+                            </p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </article>
-        <article
-            class="left col-5 ps-5 mt-5 d-flex flex-column justify-content-center align-items-center align-self-center text-center pe-5">
-            <div id="error">
-                <i class="bi bi-exclamation-circle-fill text-danger me-3"></i>
-                <p class="pt-2"></p>
-            </div>
-            <div class="copy pe-5 my-auto mt-5">
-                <h5 class="h3 ps-5 mb-4">Already Signed Up?</h5>
-                <p class="ps-5"><i class="fs-5">then proceed to login to your account</i></p>
-                <div class="ps-5 mt-5">
-                    <a href="./login.html" class="btn fs-5 px-5 btn-outline-primary last-btn">Log in</a>
+            </article>
+            <article
+                class="left col-5 ps-5 mt-5 d-lg-flex d-none flex-column justify-content-center align-items-center align-self-center text-center pe-5">
+                <div id="error">
+                    <i class="bi bi-exclamation-circle-fill text-danger me-3"></i>
+                    <p class="pt-2"></p>
                 </div>
-                </secton>
-            </div>
-        </article>
-    </section>
+                <div class="copy pe-5 my-auto mt-5">
+                    <h5 class="h3 ps-5 mb-4">Already Signed Up?</h5>
+                    <p class="ps-5"><i class="fs-5">then proceed to login to your account</i></p>
+                    <div class="ps-5 mt-5">
+                        <a href="./login.html" class="btn fs-5 px-5 btn-outline-primary last-btn">Log in</a>
+                    </div>
+                    </secton>
+                </div>
+            </article>
+        </section>
+    </div>
     <!-- Modal -->
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
