@@ -76,6 +76,8 @@ ul li:hover a {
     margin-right: 16px;
 }
 
+
+
 .logout_icon a {
     padding-left: 60px;
     position: fixed;
@@ -88,7 +90,7 @@ ul li:hover a {
     justify-content: center;
     text-align: justify;
     justify-content: center;
-    width: 60rem;
+    width: auto;
     background: white;
     margin-bottom: -50px;
 }
@@ -99,7 +101,7 @@ ul li:hover a {
     justify-content: center;
     text-align: justify;
     justify-content: center;
-    width: 60rem;
+    width: auto;
     background: white;
     margin-bottom: -50px;
 }
@@ -111,7 +113,7 @@ ul li:hover a {
     justify-content: center;
     text-align: justify;
     justify-content: center;
-    width: 60rem;
+    width: auto;
     background: white;
 }
 
@@ -121,15 +123,15 @@ ul li:hover a {
     justify-content: center;
     text-align: justify;
     justify-content: center;
-    width: 60rem;
+    width: auto;
     background: white;
 }
 
-.container {
+.container-new {
     align-items: center;
 }
 
-.container h5,
+.container-new h5,
 h6 {
     color: #0E387A;
     font-weight: 100;
@@ -152,11 +154,6 @@ h5 {
 
 .logo {
     position: static;
-}
-
-.form {
-    margin-right: 10rem;
-    padding-left: 11rem;
 }
 
 input[type=text],
@@ -217,12 +214,12 @@ label {
 }
 
 .accordion {
-    width: 60rem;
+    width: auto;
     margin-top: 2rem;
 }
 
 .profile {
-    width: 64rem;
+    width: auto !important;
 }
 
 .profile1 {
@@ -230,13 +227,21 @@ label {
     padding: 2.5rem;
 }
 
-.camera {
-    position: absolute;
-    left: 23rem;
+
+
+@media (max-width: 992px) {
+    main {
+        padding-right: 2rem;
+    }
+
+    .profile1 {
+        background-color: white;
+        padding: 1.5rem;
+    }
 }
 
-@media screen and (min-width: 980px) {
-    .wrapper {
-        width: 980px;
+@media (max-width: 768px) {
+    main{
+        padding: 4rem 0 2rem 0;
     }
 }

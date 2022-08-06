@@ -34,12 +34,13 @@ body:before {
   display: none;
   position: fixed;
   top: 2rem;
+  right: 2rem;
   background-color: rgb(247, 234, 234);
   border: 3px solid #dc3545;
   width: 25%;
   border-radius: 10px;
   justify-content: start;
-  align-items: center;
+  align-items: baseline;
   padding: 0 1rem;
 }
 
@@ -85,11 +86,38 @@ body:before {
     display: block !important;
     padding-top: 3rem;
   }
+
+  #error {
+    display: none;
+    position: fixed;
+    top: 5rem;
+    background-color: rgb(247, 234, 234);
+    border: 3px solid #dc3545;
+    width: 25%;
+    z-index: 6;
+    border-radius: 10px;
+    justify-content: start;
+    align-items: center;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 992px) {
+  #error{
+    width: 50%;
+  }
 }
 
 @media (max-width: 576px) {
   #modal-toggler {
     width: 100% !important;
+  }
+}
+
+@media (max-width: 500px) {
+  #error{
+    width: 85%;
+    right: 0.5rem;
   }
 }
 

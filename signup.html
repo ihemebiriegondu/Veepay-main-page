@@ -17,7 +17,7 @@
 
 <body class="body">
     <div class="navbar-brand d-xl-inline d-flex justify-content-between align-items-center">
-        <i class="bi bi-arrow-left-short fs-1 ms-4 d-xl-none d-block cursor-pointer" onclick="history.back()"></i>
+        <i class="bi bi-arrow-left-short fs-1 ms-4 d-xl-none d-block cursor-pointer text-primary" onclick="history.back()"></i>
         <a class="" href="./index.html">
             <img src="./images/Veepay Logo Png.png" alt="" class="mt-xl-4">
         </a>
@@ -104,10 +104,6 @@
             </article>
             <article
                 class="left col-5 ps-5 mt-5 d-xl-flex d-none flex-column justify-content-center align-items-center align-self-center text-center pe-5">
-                <div id="error">
-                    <i class="bi bi-exclamation-circle-fill text-danger me-3"></i>
-                    <p class="pt-2"></p>
-                </div>
                 <div class="copy pe-5 my-auto mt-5">
                     <h5 class="h3 ps-5 mb-4">Already Signed Up?</h5>
                     <p class="ps-5"><i class="fs-5">then proceed to login to your account</i></p>
@@ -118,6 +114,10 @@
                 </div>
             </article>
         </section>
+    </div>
+    <div id="error">
+        <i class="bi bi-exclamation-circle-fill text-danger me-3"></i>
+        <p class="pt-2"></p>
     </div>
     <!-- Modal -->
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
