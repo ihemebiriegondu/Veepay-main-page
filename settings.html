@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Veepay-Settings</title>
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link rel="shortcut icon" href="./images/20220607_140201.jpg" type="image/x-icon">
 
@@ -14,14 +19,60 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-white navbar-light pt-3">
-        <div class="container-fluid m-auto ms-0 ps-0">
-            <a class="navbar-brand" href="./index.html">
-                <img src="./images/Veepay Logo Png.png" alt="">
-            </a>
+    <nav class="navbar navbar-expand-lg bg-white navbar-light pt-3 shadow fixed-top">
+        <div class="d-flex justify-content-between align-items-center w-100">
+            <div class="container-fluid m-auto ms-0 ps-0 d-md-inline d-none">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./images/Veepay Logo Png.png" alt="">
+                </a>
+            </div>
+            <div class="home-page-small d-md-none d-inline">
+                <a href="./dashboard.html"><img src="images/Arrow 3.png" alt="" class="arrow">
+                    <h5>Back to Homepage</h5>
+                </a>
+            </div>
+            <button class="bg-transparent border border-0 shadow-none d-md-none me-4" type="button"
+                data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive" style="outline: none;"><i
+                    class="bi bi-list fs-1 fw-bolder text-primary"></i></button>
+        </div>
+
+        <div class="offcanvas-md offcanvas-start border border-0" tabindex="-1" id="offcanvasResponsive"
+            aria-labelledby="offcanvasResponsiveLabel">
+            <div class="offcanvas-header">
+                <button type="button" class="bi bi-x fs-1 bg-transparent border border-0 text-danger"
+                    data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body d-md-none p-0">
+                <ul class="nav nav-tabs flex-column d-flex" id="myTab" role="tablist">
+                    <div>
+                        <h1 class="text-primary ms-5 mt-3 mb-4">Settings</h1>
+                    </div>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link ps-5 fs-5 dash-nav-link active" id="profile-tab" data-bs-toggle="tab"
+                            data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane"
+                            aria-selected="true">Profile</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link dash-nav-link ps-5 fs-5" id="about-tab" data-bs-toggle="tab"
+                            data-bs-target="#about-tab-pane" type="button" role="tab" aria-controls="about-tab-pane"
+                            aria-selected="false">About Us</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link dash-nav-link ps-5 fs-5" id="faq-tab" data-bs-toggle="tab"
+                            data-bs-target="#faq-tab-pane" type="button" role="tab" aria-controls="faq-tab-pane"
+                            aria-selected="false">FAQs</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link dash-nav-link ps-5 fs-5" id="contact-tab" data-bs-toggle="tab"
+                            data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane"
+                            aria-selected="false">Contact
+                            Us</button>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
-    <main>
+    <main class="">
 
         <div class="home-page mb-3 d-md-inline d-none">
             <a href="./dashboard.html"><img src="images/Arrow 3.png" alt="" class="arrow">
@@ -34,23 +85,23 @@
                 <div>
                     <h1 class="text-primary ms-5 mt-4">Settings</h1>
                 </div>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link ps-5 fs-5 dash-nav-link active" id="profile-tab" data-bs-toggle="tab"
+                <li class="nav-item dash-nav-item" role="presentation">
+                    <button class="nav-link ps-4 fs-5 dash-nav-link active" id="profile-tab" data-bs-toggle="tab"
                         data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane"
                         aria-selected="true">Profile</button>
                 </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link dash-nav-link ps-5 fs-5" id="about-tab" data-bs-toggle="tab"
+                <li class="nav-item dash-nav-item" role="presentation">
+                    <button class="nav-link dash-nav-link ps-4 fs-5" id="about-tab" data-bs-toggle="tab"
                         data-bs-target="#about-tab-pane" type="button" role="tab" aria-controls="about-tab-pane"
                         aria-selected="false">About Us</button>
                 </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link dash-nav-link ps-5 fs-5" id="faq-tab" data-bs-toggle="tab"
+                <li class="nav-item dash-nav-item" role="presentation">
+                    <button class="nav-link dash-nav-link ps-4 fs-5" id="faq-tab" data-bs-toggle="tab"
                         data-bs-target="#faq-tab-pane" type="button" role="tab" aria-controls="faq-tab-pane"
                         aria-selected="false">FAQs</button>
                 </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link dash-nav-link ps-5 fs-5" id="contact-tab" data-bs-toggle="tab"
+                <li class="nav-item dash-nav-item" role="presentation">
+                    <button class="nav-link dash-nav-link ps-4 fs-5" id="contact-tab" data-bs-toggle="tab"
                         data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane"
                         aria-selected="false">Contact
                         Us</button>
@@ -119,7 +170,8 @@
                                     </div>
                                 </div>
                                 <div class="col-5 me-auto">
-                                    <button type="button" class="btn btn-primary py-2 d-inline-block rounded-lg text-center w-100">Update</button>
+                                    <button type="button"
+                                        class="btn btn-primary py-2 d-inline-block rounded-lg text-center w-100">Update</button>
                                 </div>
                             </div>
                         </div>
@@ -158,7 +210,8 @@
                                     </div>
                                 </div>
                                 <div class="col-5 me-auto">
-                                    <button type="button" class="btn btn-primary py-2 d-inline-block rounded-lg text-center w-100">Update</button>
+                                    <button type="button"
+                                        class="btn btn-primary py-2 d-inline-block rounded-lg text-center w-100">Update</button>
                                 </div>
                             </div>
                         </div>
@@ -172,7 +225,8 @@
                             </div>
 
                             <div class="d-flex justify-content-start flex-wrap mb-4">
-                                <a href="./funds.html" class="btn btn-primary px-5 me-5 d-inline-block rounded-lg mt-3">Fund Wallet</a>
+                                <a href="./funds.html"
+                                    class="btn btn-primary px-5 me-5 d-inline-block rounded-lg mt-3">Fund Wallet</a>
                                 <a href="./withdraw.html"
                                     class=" btn btn-outline-primary border-3 px-5 d-inline-block rounded-lg mt-3">Withdraw
                                     Cash</a>
@@ -375,8 +429,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane col-12 fade h-100" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
-                    tabindex="0">
+                <div class="tab-pane col-12 fade h-100" id="contact-tab-pane" role="tabpanel"
+                    aria-labelledby="contact-tab" tabindex="0">
                     <div class="main col-12">
                         <form class="form pb-5 col-11 m-auto">
                             <h1 class="text-primary mb-4">
@@ -408,7 +462,8 @@
                 </div>
             </div>
         </div>
-        <a class="d-md-flex d-none text-dark h5 align-items-center ms-5 mb-5" style="cursor: pointer;" href="./login.html">
+        <a class="d-md-flex d-none text-dark h5 align-items-center ms-5 mb-5" style="cursor: pointer;"
+            href="./login.html">
             <i class="bi bi-box-arrow-left me-2"></i>
             <p class="mt-2">Log out</p>
         </a>
@@ -418,10 +473,6 @@
         <p class="my-2 fst-italic" style="font-size: 14px;">&copy; 2022 Copyright. Veepay</p>
     </footer>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -6,6 +6,7 @@ body {
 
 main {
     padding-right: 4rem;
+    margin-top: 6rem;
 }
 
 * {
@@ -29,6 +30,17 @@ a {
 }
 
 .home-page h5 {
+    display: inline;
+    color: #292929;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.home-page-small{
+    margin-left: 1rem;
+}
+
+.home-page-small h5{
     display: inline;
     color: #292929;
     font-size: 16px;
@@ -242,6 +254,15 @@ label {
 
 @media (max-width: 768px) {
     main{
-        padding: 4rem 0 2rem 0;
+        padding: 0 0 2rem 0;
+        margin-top: 0;
+    }
+
+    #about-tab-pane{
+        margin-top: 3.6rem;
+    }
+
+    #faq-tab-pane, #contact-tab-pane{
+        margin-top: 5rem;
     }
 }

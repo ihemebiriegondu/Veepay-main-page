@@ -192,12 +192,13 @@ tbody tr:nth-child(odd) {
 }
 
 .dash-nav-link.active,
-.dash-nav-link.show .dash-nav-link {
+.dash-nav-item.show .dash-nav-link {
     outline: none !important;
     background-color: transparent !important;
     color: black !important;
-    border-left: 5px solid $primary !important;
+    border-left: 5px solid $primary  !important;
     border-radius: 0 !important;
+    margin-left: 0.7rem;
 }
 
 .vl {
@@ -305,6 +306,21 @@ tbody tr:nth-child(odd) {
 }
 
 @media (max-width: 768px) {
+    .dash-nav-link {
+        background-color: transparent !important;
+        color: #495057 !important;
+        margin: 0 !important;
+    }
+
+    .dash-nav-link.active,
+    .dash-nav-item.show .dash-nav-link {
+        outline: none !important;
+        background-color: transparent !important;
+        color: black !important;
+        border-left: 5px solid $primary  !important;
+        border-radius: 0 !important;
+    }
+
     .testimonial {
 
         .d-flex {
