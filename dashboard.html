@@ -37,25 +37,26 @@
             <!--navigation for large screen-->
             <div class="collapse navbar-collapse justify-content-end d-lg-flex d-none" id="navbarSupportedContent">
                 <ul class="navbar-nav mb-2 mb-lg-0 justify-content-between my-2">
-                    <li class="nav-item me-5 rounded"><a class="nav-link fs-5 px-5 text-white btn btn-primary border-2"
-                            href="">About Us</a></li>
+                    <li class="nav-item me-5 rounded"><a class="nav-link fs-5 my-nav-link px-5 text-white btn btn-primary border-2"
+                            href="./settings.html#about-tab-pane">About Us</a></li>
                     <li class="nav-item fs-5 me-5"><a href="./settings.html"
-                            class="btn fs-5 px-5 btn-outline-primary last-btn">Settings</a></li>
+                            class="btn fs-5 px-5 btn-outline-primary last-btn my-nav-link">Settings</a></li>
                 </ul>
             </div>
         </div>
         <!--offcanvas navigation for small screens-->
-        <div class="offcanvas offcanvas-start border border-0 d-lg-none d-block" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
+        <div class="offcanvas offcanvas-start border border-0 d-lg-none d-block" tabindex="-1" id="sidebar"
+            aria-labelledby="sidebar-label">
             <div class="offcanvas-header">
-                <button type="button" class="bi bi-x fs-1 bg-transparent border border-0 text-danger" data-bs-dismiss="offcanvas"
-                    aria-label="Close"></button>
+                <button type="button" class="bi bi-x fs-1 bg-transparent border border-0 text-danger"
+                    data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
                 <ul class="navbar-nav mb-2 mb-lg-0 justify-content-between my-2">
-                    <li class="nav-item me-5 rounded"><a class="nav-link fs-5 px-5 text-white btn btn-primary border-2"
-                            href="">About Us</a></li>
+                    <li class="nav-item me-5 rounded"><a class="nav-link fs-5 px-5 text-white btn btn-primary border-2 my-nav-link"
+                            href="./settings.html#about-tab-pane">About Us</a></li>
                     <li class="nav-item fs-5 me-5"><a href="./settings.html"
-                            class="btn fs-5 px-5 btn-outline-primary last-btn">Settings</a></li>
+                            class="btn fs-5 px-5 btn-outline-primary last-btn my-nav-link">Settings</a></li>
                 </ul>
             </div>
         </div>
@@ -63,37 +64,41 @@
     </nav>
 
     <!-- Header Section -->
-    <!--<div class="ellipse1"></div>
-    <div class="ellipse2"></div>-->
-    <div class="header ps-lg-5 pt-lg-5 row row-cols-lg-2 row-cols-1" style="background-color: rgb(221, 231, 248);">
-        <div class="pb-lg-5 text-lg-start text-center pt-lg-0 pt-5">
-            <h1 class="text-primary fw-bolder mt-5 mb-lg-4 mb-2" style="font-size: calc(1.625rem + 9.6vw)">Veepay</h1>
-            <h1 class="text-primary mb-5 ms-lg-4 feed">Feed your Network, Live Better
-            </h1>
-            <p class="fs-5 mb-4 col-md-10 col-sm-11 px-sm-0 px-3 mx-lg-0 mx-auto">
-                Veepay is a three in one telecommunication platform that provides its users with hassle-free
-                experience
-                anytime they use its product. Veepay intends to connect individuals in ways to pay for their
-                favorite
-                services by providing easier, faster and secure ways to recharge your favorite brands.
-            </p>
-            <a href="#" class="start-link btn btn-primary px-5 py-3 mb-5 fs-5">Start now</a>
+
+    <div class="header pt-lg-5 row row-cols-lg-2 row-cols-1">
+        <div class="col veepay-intro-main-div my-auto">
+            <div class="veepay-intro-div text-lg-start text-center pt-lg-0 pt-5">
+                <div class="veepay-logo-div">
+                    <img class="veepay-logo" src="./images/Veepay Logo.png" alt="">
+                </div>
+                <div class="ps-lg-5 col-md-10 col-sm-11 mx-auto">
+                    <p class="fs-5 mb-4 px-sm-0 px-3">
+                        Veepay is a three in one telecommunication platform that provides its users with hassle-free
+                        experience
+                        anytime they use its product. Veepay intends to connect individuals in ways to pay for their
+                        favorite
+                        services by providing easier, faster and secure ways to recharge your favorite brands.
+                    </p>
+                    <a href="#home-cards" class="dasboard-start-link text-primary mb-5 fs-5">Start now</a>
+                </div>
+            </div>
         </div>
-        <img class="header-img pt-lg-4 pt-0" src="./images/second girl.png" style="object-fit: cover; z-index: 1;"
-            alt="">
+        <div class="col">
+            <div class="pt-lg-4 pt-0 d-flex justify-content-center header-img-div align-items-center text-center">
+                <img class="header-img" src="./images/Group 12 (1).png" alt="">
+            </div>
+        </div>
     </div>
 
 
     <section class="row">
         <div class="col-11 m-auto">
             <!-- Products -->
-            <div class="products">
+            <div class="products" id="home-cards">
                 <div class="row">
-                    <div class="text-center col-xxl-8 col-xl-10 col-lg-11 my-5 m-auto">
-                        <h2 class="product-head lh-lg fw-bold">
-                            Products and Services
-                        </h2>
-                        <p class="product-head fs-5 lh-base">Our sole aim is to provide Bulk SMS, SME Data,
+                    <div class="text-center col-xxl-9 col-xl-10 col-lg-12 px-lg-0 px-3 mt-5 mb-4 m-auto product-head">
+                        <h2 class="">Products and Services</h2>
+                        <p class="">Our sole aim is to provide Bulk SMS, SME Data,
                             And Recharge Plartform all at affordable rates.
                             Aside the fact that we sell internet data and airtime, you can also pay your Utility bills
                             such as
@@ -104,14 +109,14 @@
 
                 <div class="card-container row row-cols-xl-4 row-cols-sm-2 row-cols-1 g-4">
                     <div class="col">
-                        <div class="card bg-light shadow">
-                            <div class="card-body" style="height: 290px;">
-                                <div class="m-auto text-center pt-5 pb-4">
-                                    <i class="bi bi-arrow-down-up bg-info h3 px-3 py-2 rounded-circle"></i>
+                        <div class="card first-home-card">
+                            <div class="card-body p-0">
+                                <div class="m-auto text-center i-div">
+                                    <i class="bi bi-arrow-down-up bg-info h3 rounded-circle"></i>
                                 </div>
                                 <div class="text-center">
-                                    <h3 class="mb-4">SME DATA</h3>
-                                    <a class="text-decoration-none btn btn-primary px-5 py-2 mb-3 mt-3 rounded text-white"
+                                    <h2 class="">SME DATA</h2>
+                                    <a class="text-decoration-none btn btn-primary px-5 py-2 mb-3 mt-3 rounded text-white buy-button"
                                         href="./BUY SME DATA.html">BUY NOW</a>
                                 </div>
                             </div>
@@ -119,16 +124,16 @@
                     </div>
 
                     <div class="col">
-                        <div class="card bg-light shadow">
-                            <div class="card-body" style="height: 290px;">
-                                <div class="m-auto text-center pt-4 pb-4">
-                                    <i class="bi bi-wifi bg-info h3 px-3 py-2 rounded-circle"></i>
+                        <div class="card first-home-card">
+                            <div class="card-body p-0">
+                                <div class="m-auto text-center i-div">
+                                    <i class="bi bi-wifi bg-info h3 rounded-circle"></i>
                                 </div>
                                 <div class="text-center">
-                                    <h3 class="mb-4">RECHARGE</h3>
-                                    <a class="text-decoration-none btn btn-primary px-5 py-2 mb-1 rounded text-white border-5 two"
+                                    <h2 class="">RECHARGE</h2>
+                                    <a class="text-decoration-none btn btn-primary px-5 py-2 mb-1 rounded text-white border-5 two buy-button"
                                         href="./Buy  Airtime.html">BUY NOW</a> <br>
-                                    <a class="text-decoration-none btn btn-outline-primary px-5 py-2 mb-2 mt-1 rounded border-3 mt-2 two"
+                                    <a class="text-decoration-none btn btn-outline-primary px-5 py-2 mb-2 mt-1 rounded border-3 mt-2 tw rounded-5o buy-button"
                                         href="./selltous-intro.html">SELL TO US</a>
                                 </div>
                             </div>
@@ -136,14 +141,14 @@
                     </div>
 
                     <div class="col">
-                        <div class="card bg-light shadow">
-                            <div class="card-body" style="height: 290px;">
-                                <div class="m-auto text-center pt-5 pb-4">
-                                    <i class="bi bi-chat-square-dots-fill bg-info h3 px-3 py-2 rounded-circle"></i>
+                        <div class="card first-home-card">
+                            <div class="card-body p-0">
+                                <div class="m-auto text-center i-div">
+                                    <i class="bi bi-chat-square-dots-fill bg-info h3 rounded-circle"></i>
                                 </div>
                                 <div class="text-center">
-                                    <h3 class="mb-4">BULK SMS</h3>
-                                    <a class="text-decoration-none btn btn-primary px-5 py-2 mb-3 mt-3 rounded text-white"
+                                    <h2 class="">BULK SMS</h2>
+                                    <a class="text-decoration-none btn btn-primary px-5 py-2 mb-3 mt-3 rounded text-white buy-button"
                                         href="./Bulk SMS.html">BUY NOW</a>
                                 </div>
                             </div>
@@ -151,14 +156,14 @@
                     </div>
 
                     <div class="col">
-                        <div class="card bg-light shadow">
-                            <div class="card-body" style="height: 290px;">
-                                <div class="m-auto text-center pt-5 pb-4">
-                                    <i class="bi bi-tv-fill bg-info h3 px-3 py-2 rounded-circle"></i>
+                        <div class="card first-home-card">
+                            <div class="card-body p-0">
+                                <div class="m-auto text-center i-div">
+                                    <i class="bi bi-tv-fill bg-info h3 rounded-circle"></i>
                                 </div>
                                 <div class="text-center">
-                                    <h3 class="mb-4">CABLE TV</h3>
-                                    <a class="text-decoration-none btn btn-primary px-5 py-2 mb-3 mt-3 rounded text-white"
+                                    <h2 class="">CABLE TV</h2>
+                                    <a class="text-decoration-none btn btn-primary px-5 py-2 mb-3 mt-3 rounded text-white buy-button"
                                         href="./Cable tv subscription.html">BUY NOW</a>
                                 </div>
                             </div>
@@ -168,23 +173,25 @@
             </div>
         </div>
         <!-- Testimonials -->
-        <div class="testimonial dashboard-testimonial mt-5">
-            <div class="d-flex flex-md-row flex-column-reverse justify-content-between my-5 bg-light pt-3">
-                <div class="col-md-6 col-8 testimonial-img-div mx-lg-0 mx-auto">
-                    <img src="./images/boy2.png" alt="" class="testimonial-img">
+        <div class="testimonial mt-5">
+            <div class="d-flex flex-md-row flex-column-reverse justify-content-between my-5 pt-3">
+                <div class="col-md-6 col-8 testimonial-img-div mx-auto">
+                    <img src="./images/Group 13.png" alt="" class="testimonial-img">
                 </div>
-                <div class="testimonial-text col-xl-5 col-md-6 col-11 mt-5 mx-md-0 mx-auto px-3">
-                    <h2 class="text-head mb-4 fw-bold text-md-start text-center">Why use our Platform</h2>
-                    <ul class="text-link fs-5">
-                        <li>Roll out Subscriptions in minutes</li>
-                        <li>24/7 Availability</li>
-                        <li>Ease of adding contact(flexibility to add a mobile <br> contact directly from phone)</li>
-                        <li>Enjoy cheaper rates.</li>
-                        <li>Stress free Recharge and subscriptions</li>
-                        <li>Prompt support</li>
-                        <li>Secure and convenient.</li>
-                        <li class="list-unstyled mb-4 mt-4"><a href="">Explore more</a></li>
-                    </ul>
+                <div class="testimonial-text col-md-6 col-11 mt-5 mx-md-0 mx-auto px-3">
+                    <div class="pe-5">
+                        <h2 class="text-md-start text-center">Why use our Platform</h2>
+                        <ul class="text-link">
+                            <li>Roll out Subscriptions in minutes</li>
+                            <li>24/7 Availability</li>
+                            <li>Ease of adding contact(flexibility to add a mobile contact directly from phone)</li>
+                            <li>Enjoy cheaper rates.</li>
+                            <li>Stress free Recharge and subscriptions</li>
+                            <li>Prompt support</li>
+                            <li>Secure and convenient.</li>
+                            <li class="list-unstyled mb-4 mt-4"><a href="#home-cards">Explore more</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -192,7 +199,7 @@
         <!-- Pricing -->
         <div class="pricing-container col-sm-11 col-10 p-0 m-auto" style="overflow-x: auto;">
             <div>
-                <h2 class="text-center">SME DATA Rates and Pricing Table</h2>
+                <h2 class="text-center">Rates and Pricing Table</h2>
                 <div class="heading-line"></div>
             </div>
             <div class="">
@@ -214,10 +221,9 @@
                         tabindex="0">
 
                         <div class="">
-                            <table
-                                style="width: 100%; box-shadow: 3px 3px 10px rgba(178, 186, 193, 0.5); border: 1px solid rgba(178, 186, 193, 0.5);">
+                            <table style="width: 100%;">
                                 <thead>
-                                    <tr style="height: 60px;" class="fs-4">
+                                    <tr style="height: 60px;">
                                         <th scope="col" style="width: 16.67%;" class="text-center th">DATA VALUE</th>
                                         <th scope="col" style="width: 16.67%;" class="text-center th">DAYS</th>
                                         <th scope="col" style="width: 16.67%;" class="text-center th">MTN</th>
@@ -316,12 +322,12 @@
                                         <td class="td"></td>
                                     </tr>
                                     <tr style="height: 120px;" class="text-bottom d-flex align-items-end">
-                                        <th colspan="6" class="text-start ps-2 pb-2 fs-5">Other Services</th>
-                                    <tr style="height: 60px;" class="text-start">
+                                        <th colspan="6" class="text-start ps-2 pb-2 other-services">Other Services</th>
+                                    <tr style="height: 60px;" class="text-start last-tr">
                                         <td colspan="6" class="ps-2">
                                             <div class="d-flex justify-content-between">
                                                 <div class="fs-4">
-                                                    Airtime Recharge
+                                                    <h3>Airtime Recharge</h3>
                                                 </div>
                                                 <li style="width: 75%;" class="fs-5">
                                                     2% discount
@@ -329,11 +335,11 @@
                                             </div>
                                         </td>
                                     </tr>
-                                    <tr style="height: 60px;" class="text-start">
+                                    <tr style="height: 60px;" class="text-start last-tr">
                                         <td colspan="6" class="ps-2">
                                             <div class="d-flex justify-content-between">
                                                 <div class="fs-4">
-                                                    Cable Tv
+                                                    <h3>Cable Tv</h3>
                                                 </div>
                                                 <li style="width: 75%;" class="fs-5">
                                                     Normal Subscription Price
@@ -349,13 +355,12 @@
                     <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
                         tabindex="0">
                         <div class="">
-                            <table
-                                style="width: 100%; box-shadow: 3px 3px 10px rgba(178, 186, 193, 0.5); border: 1px solid rgba(178, 186, 193, 0.5);">
+                            <table style="width: 100%;">
                                 <thead style="width: 100%;">
                                     <tr style="height: 60px;">
-                                        <th scope="col" style="width: 40%;" class="text-start fs-4 ps-2">RECIPIENT RANGE
+                                        <th scope="col" style="width: 40%;" class="text-start ps-2">RECIPIENT RANGE
                                         </th>
-                                        <th scope="col" style="width: 60%;" class="text-start fs-4">PRICE PER BULK SMS
+                                        <th scope="col" style="width: 60%;" class="text-start">PRICE PER BULK SMS
                                             PAGE
                                         </th>
                                     </tr>
@@ -390,12 +395,12 @@
                                         <td colspan="3" class="ps-5">N1</td>
                                     </tr>
                                     <tr style="height: 120px;" class="text-bottom d-flex align-items-end">
-                                        <th colspan="3" class="text-start ps-2 pb-2 fs-5">Other Services</th>
-                                    <tr style="height: 60px;" class="text-start">
-                                        <td colspan="3" class="ps-2">
+                                        <th colspan="6" class="text-start ps-2 pb-2 other-services">Other Services</th>
+                                    <tr style="height: 60px;" class="text-start last-tr">
+                                        <td colspan="6" class="ps-2">
                                             <div class="d-flex justify-content-between">
                                                 <div class="fs-4">
-                                                    Airtime Recharge
+                                                    <h3>Airtime Recharge</h3>
                                                 </div>
                                                 <li style="width: 75%;" class="fs-5">
                                                     2% discount
@@ -403,11 +408,11 @@
                                             </div>
                                         </td>
                                     </tr>
-                                    <tr style="height: 60px;" class="text-start">
-                                        <td colspan="3" class="ps-2">
+                                    <tr style="height: 60px;" class="text-start last-tr">
+                                        <td colspan="6" class="ps-2">
                                             <div class="d-flex justify-content-between">
                                                 <div class="fs-4">
-                                                    Cable Tv
+                                                    <h3>Cable Tv</h3>
                                                 </div>
                                                 <li style="width: 75%;" class="fs-5">
                                                     Normal Subscription Price
@@ -424,13 +429,12 @@
         </div>
 
         <!-- FAQS -->
-        <div class="FAQ row mt-5 p-0 mx-0">
+        <div class="FAQ row p-0 mx-0">
             <div class="col-11 m-auto">
-                <h2 class="text-center mb-5 mt-4">Frequently asked Questions</h2>
+                <h3 class="text-center">Frequently asked Questions</h3>
                 <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
-                        <div
-                            class="border border-3 rounded border-info border-primary mb-3 ps-lg-5 ps-md-4 ps-sm-3 ps-2">
+                        <div class="border border-3 rounded rounded-5 border-primary mb-3 ps-lg-5 ps-md-4 ps-sm-3 ps-2">
                             <h2 class="accordion-header" id="headingOne">
                                 <button class="accordion-button collapsed fs-5 fw-bold" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
@@ -440,7 +444,7 @@
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionExample">
-                                <div class="accordion-body lead">
+                                <div class="accordion-body pt-0">
                                     Veepay is a three in one telecommunication platform that provides its users with
                                     hassle-free
                                     experience anytime they use its product. Veepay intends to connect individuals in
@@ -454,8 +458,7 @@
                         </div>
                     </div>
                     <div class="accordion-item">
-                        <div
-                            class="border border-3 rounded border-info border-primary mb-3 ps-lg-5 ps-md-4 ps-sm-3 ps-2">
+                        <div class="border border-3 rounded rounded-5 border-primary mb-3 ps-lg-5 ps-md-4 ps-sm-3 ps-2">
                             <h2 class="accordion-header" id="headingTwo">
                                 <button class="accordion-button collapsed fs-5 fw-bold" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
@@ -463,9 +466,9 @@
                                     How do I use my Dashboard
                                 </button>
                             </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            <div id="collapseTwo" class="accordion-collapse collapse py-0" aria-labelledby="headingTwo"
                                 data-bs-parent="#accordionExample">
-                                <div class="accordion-body lead">
+                                <div class="accordion-body pt-0">
                                     First Login or Signup to an account, then go to the Settings Page to update your
                                     account and Fund your wallet to be able to a Recharge or perform any transaction
                                 </div>
@@ -473,8 +476,7 @@
                         </div>
                     </div>
                     <div class="accordion-item">
-                        <div
-                            class="border border-3 rounded border-info border-primary mb-3 ps-lg-5 ps-md-4 ps-sm-3 ps-2">
+                        <div class="border border-3 rounded rounded-5 border-primary mb-3 ps-lg-5 ps-md-4 ps-sm-3 ps-2">
                             <h2 class="accordion-header" id="headingThree">
                                 <button class="accordion-button collapsed fs-5 fw-bold" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
@@ -484,7 +486,7 @@
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                                 data-bs-parent="#accordionExample">
-                                <div class="accordion-body lead">
+                                <div class="accordion-body pt-0">
                                     Under the profile section in the settings page, click Fund wallet to add or remove
                                     debit card
                                 </div>
@@ -492,8 +494,7 @@
                         </div>
                     </div>
                     <div class="accordion-item">
-                        <div
-                            class="border border-3 rounded border-info border-primary mb-3 ps-lg-5 ps-md-4 ps-sm-3 ps-2">
+                        <div class="border border-3 rounded rounded-5 border-primary mb-3 ps-lg-5 ps-md-4 ps-sm-3 ps-2">
                             <h2 class="accordion-header" id="headingFour">
                                 <button class="accordion-button collapsed fs-5 fw-bold" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
@@ -503,7 +504,7 @@
                             </h2>
                             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                                 data-bs-parent="#accordionExample">
-                                <div class="accordion-body lead">
+                                <div class="accordion-body pt-0">
                                     BULK SMS is a service that allow sending a large number of SMS to multiple users at
                                     once. And you will get that service at lower rate here.
                                 </div>
@@ -511,8 +512,7 @@
                         </div>
                     </div>
                     <div class="accordion-item">
-                        <div
-                            class="border border-3 rounded border-info border-primary mb-3 ps-lg-5 ps-md-4 ps-sm-3 ps-2">
+                        <div class="border border-3 rounded rounded-5 border-primary mb-3 ps-lg-5 ps-md-4 ps-sm-3 ps-2">
                             <h2 class="accordion-header" id="headingfive">
                                 <button class="accordion-button collapsed fs-5 fw-bold" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false"
@@ -522,7 +522,7 @@
                             </h2>
                             <div id="collapsefive" class="accordion-collapse collapse" aria-labelledby="headingfive"
                                 data-bs-parent="#accordionExample">
-                                <div class="accordion-body lead">
+                                <div class="accordion-body pt-0">
                                     For now, NO. Veepay is looking to extend its bulk SMS services internationally and
                                     you will be notified as soon as the service its available.
                                 </div>
@@ -530,8 +530,7 @@
                         </div>
                     </div>
                     <div class="accordion-item">
-                        <div
-                            class="border border-3 rounded border-info border-primary mb-3 ps-lg-5 ps-md-4 ps-sm-3 ps-2">
+                        <div class="border border-3 rounded rounded-5 border-primary mb-3 ps-lg-5 ps-md-4 ps-sm-3 ps-2">
                             <h2 class="accordion-header" id="headingSix">
                                 <button class="accordion-button collapsed fs-5 fw-bold" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false"
@@ -541,7 +540,7 @@
                             </h2>
                             <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
                                 data-bs-parent="#accordionExample">
-                                <div class="accordion-body lead">
+                                <div class="accordion-body pt-0">
                                     For now, NO. We are also working towards building our Mobile Application and you
                                     will be notified as soon as its available
                                 </div>
@@ -551,18 +550,18 @@
 
                 </div>
             </div>
-            <div class="FAQ-footer text-center mt-5 mb-5">
-                <p class="h5">More Questions?</p>
-                <a class="h5 fst-italic text-primary" href="">Read more</a>
+            <div class="FAQ-footer text-center mb-5">
+                <p class="">More Questions?</p>
+                <a class="" href="./settings.html#faq-tab-pane">Read more</a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <div class="footer row bg-light">
-        <div class="col-xxl-9 col-xl-10 col-sm-11 px-sm-0 px-3 text-center m-auto py-4">
-            <h2 class="mb-5">About Us</h2>
-            <p class="mb-5 fs-5">Veepay is a three in one telecommunication platform that provides its users with
+        <div class="col-xxl-9 col-xl-10 col-sm-11 px-sm-0 px-3 text-center m-auto">
+            <h2 class="">About Us</h2>
+            <p class="">Veepay is a three in one telecommunication platform that provides its users with
                 hassle-free
                 experience anytime they use its product. Veepay intends to connect individuals in
                 ways
@@ -570,33 +569,33 @@
                 for their favorite services by providing easier, faster and secure ways to recharge
                 your
                 favorite brands.</p>
-            <hr class="w-25 m-auto" style="height: 2px; color: rgb(143, 175, 208);">
-            <h2 class="mb-5 mt-4">Contacts</h2>
+            <hr class="w-25 m-auto" style="height: 0px; border: 1px solid rgba(14, 56, 122, 0.2);">
+            <h2 class="">Contacts</h2>
             <!-- icons -->
 
-            <div class="footer-icons mb-4">
+            <div class="footer-icons">
                 <a class="text-decoration-none" href="">
-                    <img src="./images/icons8-phone-64.png" alt="" width="32" class="me-4">
+                    <img src="./images/CALL.png" alt="" class="me-4">
                 </a>
                 <a class="text-decoration-none" href="">
-                    <img src="./images/icons8-facebook-48.png" alt="" width="37" class="me-4">
+                    <img src="./images/FACEBOOK.png" alt="" class="me-4">
                 </a>
                 <a class="text-decoration-none" href="">
-                    <img src="./images/icons8-linkedin-circled-48.png" alt="" width="39" class="me-4">
+                    <img src="./images/LINKEDIN.png" alt="" class="me-4">
                 </a>
                 <a class="text-decoration-none" href="">
-                    <img src="./images/icons8-instagram-50.png" alt="" width="31" class="me-4">
+                    <img src="./images/INSTAGRAM.png" alt="" class="me-4">
                 </a>
                 <a class="text-decoration-none" href="">
-                    <img src="./images/icons8-twitter-48.png" alt="" width="30" class="me-4">
+                    <img src="./images/TWITTER.png" alt="" class="me-4">
                 </a>
                 <a class="text-decoration-none" href="">
-                    <img src="./images/icons8-circled-envelope-50.png" alt="" width="35">
+                    <img src="./images/GMAIL.png" alt="">
                 </a>
             </div>
         </div>
-        <div class="copyright py-2 bg-primary text-white text-center col-12">
-            <p class="my-2 fst-italic" style="font-size: 14px;">&copy; 2022 Copyright. Veepay</p>
+        <div class="copyright bg-primary text-white text-center col-12">
+            <p class="my-2">&copy; 2022 Copyright. Veepay</p>
         </div>
     </div>
 
