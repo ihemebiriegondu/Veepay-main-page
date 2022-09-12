@@ -15,7 +15,7 @@
 }
 
 body {
-    background-color: rgb(221, 231, 248);
+    background: rgba(14, 56, 122, 0.1) !important;
 }
 
 header {
@@ -30,87 +30,100 @@ header {
 
 .home-page {
     margin-left: 3rem;
-    margin-top: 1rem;
+    margin-top: 40px;
+    margin-bottom: 26px !important;
 }
 
 .home-page h5 {
     display: inline;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
     color: #292929;
-    font-size: 15px;
-    font-weight: 700;
+    margin-bottom: 14px !important;
 }
 
 .arrow {
-    width: 10px;
+    width: 14px;
     margin-right: 3px;
 }
 
 .big-heading {
     text-align: center;
-    color: #0E387A;
+    font-family: 'Montserrat';
+    font-style: normal;
     font-weight: 700;
-    padding-top: 12px;
-    font-size: 2rem;
-    margin-top: 3rem;
+    font-size: 40px;
+    line-height: 49px;
+    margin-bottom: 0 !important;
+    color: #0E387A;
 }
 
 .sub-heading {
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 15.8px !important;
     color: var(--blue);
-    font-size: 16px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 38.2px !important;
+    line-height: 28px;
 }
 
 .recharge-airtime {
     width: 70%;
-    margin: 1rem auto 3rem auto;
+    margin: 0 auto 3rem auto !important;
     min-height: 100vh;
     padding-top: 2rem;
 }
 
 .container-n {
-    margin-top: 0.5rem;
     background-color: #ffff;
-    padding: 4.5rem;
+    padding: 66px 76px;
     border-radius: 40px 40px 40px 0;
 
 }
 
-#Network {
-    display: block;
-    width: 100%;
-    height: 50px;
-    font-size: 16px;
-    color: #000000;
-    font-weight: 500;
-    border: 3px solid rgba(115, 126, 145, 0.7);
-    border-radius: 10px;
-    outline: none;
-    padding-left: 1rem;
-}
-
 label {
     display: block;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-bottom: 19px !important;
 }
 
 label p {
-    font-size: 14px;
     padding-top: 5px;
-    color: #0944a4;
+    color: #0E387A;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
 }
 
-input {
+input,
+select {
     display: block;
     width: 100%;
     margin-top: 0.3rem;
     height: 50px;
-    font-size: 16px;
-    font-weight: 500;
     border: 3px solid rgba(115, 126, 145, 0.7);
     border-radius: 10px;
     letter-spacing: 0.5px;
     padding: 0 1rem;
     outline: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
 }
 
 .network {
@@ -128,23 +141,22 @@ input {
     font-weight: 500;
 }
 
-.btn {
-    display: block;
-    width: 50%;
-    border-radius: 10px 10px 10px 0px;
-    border: none;
-    padding: 12px 38px;
-    background-color: #0E387A;
-    color: #FFFF;
-    margin: 0 auto;
-    margin-top: 3rem;
-    font-size: 18px;
-    font-weight: 600;
-    cursor: pointer;
+#container {
+    width: 100%;
+    text-align: center;
 }
 
-.btn:hover {
-    background-color: rgba(4, 56, 122, 0.9);
+form button {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    padding: 16px 8px !important;
+    width: 50%;
+    background-color: #0E387A;
+    color: white;
+    margin-top: 54px !important;
 }
 
 a {
@@ -152,15 +164,22 @@ a {
 }
 
 .footer {
-    background-color: #0E387A;
-    width: 100%;
-    text-align: center;
-    color: white;
-    padding: 15px 8px;
+    padding: 0 !important;
 }
 
-.footer i {
-    font-size: 13px;
+.footer .copyright {
+    padding: 13px 0;
+}
+
+.footer .copyright p {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: white;
+    margin: auto !important;
 }
 
 @media (max-width: 1200px) {
