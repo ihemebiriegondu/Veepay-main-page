@@ -192,6 +192,16 @@ a {
     .recharge-airtime {
         width: 90%;
     }
+
+    .sub-heading {
+        font-size: 15px !important;
+        line-height: 13px;
+    }
+
+    .feedback {
+        font-size: 12px !important;
+        line-height: 20px;
+    }
 }
 
 @media only screen and (min-width: 310px) and (max-width:580px) {

@@ -8,58 +8,70 @@
 
     <link rel="stylesheet" href="./css/main.min.css">
     <link rel="stylesheet" href="./other css/Buy Airtime.css">
+    <link rel="stylesheet" href="./other css/Smedata.css">
     <link rel="shortcut icon" href="./images/20220607_140201.jpg" type="image/x-icon">
     <title>Buy Airtime Page</title>
 </head>
 
 <body>
-    <header>
-        <a href="./dashboard.html"> <img src="images/Veepay Logo Png.png" alt="Veepay Logo" class=logo></a>
-    </header>
-    <div class="home-page">
+    <nav class="navbar navbar-expand-lg bg-white navbar-light pt-3">
+        <div class="container-fluid m-auto ms-0 ps-0 d-lg-block d-none">
+            <a class="navbar-brand" href="./dashboard.html">
+                <img src="./images/Veepay Logo Png.png" alt="">
+            </a>
+        </div>
+        <div class="home-page d-lg-none d-block">
+            <a href="./dashboard.html"><img src="images/Arrow 3.png" alt="" class="arrow">
+                <h5>Back to Homepage</h5>
+            </a>
+        </div>
+    </nav>
+    <div class="home-page d-lg-block d-none">
         <a href="./dashboard.html"><img src="images/Arrow 3.png" alt="" class="arrow">
             <h5>Back to Homepage</h5>
         </a>
     </div>
-    <h2 class="big-heading">BUY AIRTIME</h2>
-    <h5 class="sub-heading">Top up your airtime instantly</h5>
-    <form class="recharge-airtime" action="post">
-        <div class="container-n">
-            <div class="inner">
-                <label for="Network" class=network>Network</label>
-                <select id="Network" class="form-select form-select-lg">
-                    <option value="select ntwork">Select Network</option>
-                    <option value="mtn">MTN</option>
-                    <option value="glo">GLO</option>
-                    <option value="airtel">AIRTEL</option>
-                    <option value="9mobile">9mobile</option>
-                </select>
+    <main>
+        <h2 class="mt-5"><b>BUY AIRTIME</b></h2>
+        <h5 class="sub-heading">Top up your airtime instantly</h5>
+        <form class="recharge-airtime" action="post">
+            <div class="container-n">
+                <div class="inner">
+                    <label for="Network" class=network>Network</label>
+                    <select id="Network" class="form-select form-select-lg">
+                        <option value="select ntwork">Select Network</option>
+                        <option value="mtn">MTN</option>
+                        <option value="glo">GLO</option>
+                        <option value="airtel">AIRTEL</option>
+                        <option value="9mobile">9mobile</option>
+                    </select>
 
-                <label for="Phone Number" class="number">Phone Number</label>
-                <input type="Phone Number" name="Phone Number" placeholder="Phone Number" />
-                <label for="Phone number you wish to recharge">
-                    <p>Phone number you wish to recharge</p>
-                </label>
-                <label for="Amount" class="amount">Amount</label>
-                <input type="Account" name="Amount" placeholder="Amount" />
-                <label for="Minimum Airtime of N...">
-                    <p>Minimum Airtime of N100</p>
-                </label>
+                    <label for="Phone Number" class="number">Phone Number</label>
+                    <input type="Phone Number" name="Phone Number" placeholder="Phone Number" />
+                    <label for="Phone number you wish to recharge">
+                        <p class="feedback">Phone number you wish to recharge</p>
+                    </label>
+                    <label for="Amount" class="amount">Amount</label>
+                    <input type="Account" name="Amount" placeholder="Amount" />
+                    <label for="Minimum Airtime of N...">
+                        <p class="feedback">Minimum Airtime of N100</p>
+                    </label>
 
-                <div id="container">
-                    <button type="submit" class="btn btn-primary btn-lg rounded-0"><b>Buy</b></button>
+                    <div id="container">
+                        <button type="submit" class="btn btn-primary btn-lg rounded-0"><b>Buy</b></button>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+        <div>
+            <div class="footer row">
+                <div class="copyright bg-primary text-white text-center col-12">
+                    <p class="">&copy; 2022 Copyright. Veepay</p>
                 </div>
             </div>
         </div>
-
-    </form>
-    <div>
-        <div class="footer row">
-            <div class="copyright bg-primary text-white text-center col-12">
-                <p class="">&copy; 2022 Copyright. Veepay</p>
-            </div>
-        </div>
-    </div>
+    </main>
 
 </body>
 
