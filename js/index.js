@@ -148,15 +148,6 @@ let changeAmount = () => {
 
 }
 
-/*
-<option value="500mg">500mb-30 Days</option>
-        <option value="1.5gb">1.5gb-30 Days</option>
-        <option value="4.5gb">4.5gb-30 Days</option>
-        <option value="11gb">11gb-30 Days</option>
-        <option value="15gb">15gb-30 Days</option>
-        <option value="40gb">40gb-30 Days</option>
-        <option value="75gb">75gb-30 Days</option>*/
-
 dataValue.addEventListener("change", changeAmount);
 
 
