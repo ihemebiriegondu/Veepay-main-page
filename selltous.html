@@ -15,21 +15,25 @@
 <body>
     <!-- logo on header -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light pt-3">
-        <div class="container-fluid m-auto ms-0 ps-0">
+        <div class="container-fluid m-auto ms-0 ps-0 d-lg-block d-none">
             <a class="navbar-brand" href="./dashboard.html">
                 <img src="./images/Veepay Logo Png.png" alt="">
             </a>
         </div>
+        <div class="home-page d-lg-none d-block">
+            <a href="./dashboard.html"><img src="images/Arrow 3.png" alt="" class="arrow">
+                <h5>Back to Homepage</h5>
+            </a>
+        </div>
     </nav>
-
-    <div class="home-page">
+    <div class="home-page d-lg-block d-none">
         <a href="./dashboard.html"><img src="images/Arrow 3.png" alt="" class="arrow">
             <h5>Back to Homepage</h5>
         </a>
     </div>
     <main>
         <h2 class="mb-3"><b>Sell to Us</b></h2>
-        <div class="container-form mb-5"> 
+        <div class="container-form mb-5">
             <form class="" id="signup-form">
                 <div class="custom-select mb-4" style="width: 100%;">
                     <label for="network"> Network</label>
@@ -55,7 +59,7 @@
                     <label for="percentage">Percentage to be deducted</label>
                     <input type="text" name="text" id="percentage" class="form-control amount form-control-lg"
                         placeholder="" aria-label="percentage">
-                    <div id="validationServer01Feedback" class="invalid-feedback text-primary" style="display: block;">
+                    <div id="validationServer02Feedback" class="invalid-feedback text-primary" style="display: block;">
                         System automatically calculates amount to be deducted
                     </div>
                 </div>
@@ -63,8 +67,8 @@
                 <div class="input-group mb-4">
                     <label for="phonenumber">Phone Number</label>
                     <input type="tel" class="phonenumber form-control form-control-lg" placeholder="Input Number"
-                        aria-label="phonenumber" id="validationServer01" aria-describedby="basic-addon1" required>
-                    <div id="validationServer01Feedback" class="invalid-feedback text-primary" style="display: block;">
+                        aria-label="phonenumber" id="validationServer03" aria-describedby="basic-addon1" required>
+                    <div id="validationServer03Feedback" class="invalid-feedback text-primary" style="display: block;">
                         Phone number where the airtime will be deducted
                     </div>
                 </div>

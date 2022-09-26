@@ -166,6 +166,14 @@ textarea {
     margin-bottom: 61px;
 }
 
+.invalid-feedback {
+    font-family: 'Poppins' !important;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 18px !important;
+    line-height: 15px;
+}
+
 .send-options-div {
     margin-top: 41px !important;
 }
@@ -239,9 +247,30 @@ textarea {
 }
 
 @media (max-width: 992px) {
-    main h2 b {
+
+    main h2 b,
+    .sell-to-us h3 {
         font-size: 20px !important;
         line-height: 24px;
+    }
+
+    .sell-to-us p {
+        font-size: 15px !important;
+        line-height: 17px;
+    }
+
+    .sell-to-us .btn {
+        padding: 6.25396px 3.12698px !important;
+        font-size: 12px !important;
+        line-height: 13px;
+    }
+
+    .invalid-feedback {
+        font-family: 'Poppins' !important;
+        font-style: italic;
+        font-weight: 300;
+        font-size: 14px !important;
+        line-height: 15px;
     }
 
     .home-page {
