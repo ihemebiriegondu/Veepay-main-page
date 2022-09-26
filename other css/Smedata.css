@@ -166,6 +166,35 @@ textarea {
     margin-bottom: 61px;
 }
 
+.send-options-div {
+    margin-top: 41px !important;
+}
+
+.send-options-div .send-option {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px !important;
+    line-height: 29px;
+    color: black !important;
+}
+
+.send-options-div input {
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    width: 23px !important;
+    height: 21px !important;
+}
+
+.send-options-div label {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px !important;
+    line-height: 24px;
+    color: black !important;
+}
+
 .sell-to-us .btn {
     font-family: 'Montserrat';
     font-style: normal;
@@ -210,8 +239,77 @@ textarea {
 }
 
 @media (max-width: 992px) {
+    main h2 b {
+        font-size: 20px !important;
+        line-height: 24px;
+    }
+
+    .home-page {
+        margin-left: 3rem;
+        margin-top: 0;
+        margin-bottom: 10px !important;
+    }
+
+    .home-page h5 {
+        display: inline;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 12px;
+    }
+
+    .arrow {
+        width: 9.44px;
+        margin-right: 3px;
+    }
+
     .container-form {
         width: 90%;
+        border-radius: 12.8171px 12.8171px 12.8171px 0px !important;
+    }
+
+    label {
+        font-size: 16px !important;
+        line-height: 16px;
+    }
+
+    input,
+    select,
+    textarea {
+        font-size: 16px !important;
+        line-height: 16px;
+    }
+
+    .send-options-div .send-options {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px !important;
+        line-height: 15px;
+        color: black !important;
+    }
+
+    .send-options-div input {
+        border-radius: 0 !important;
+        box-shadow: none !important;
+        width: 9px !important;
+        height: 15px !important;
+    }
+
+    .send-options-div label {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px !important;
+        line-height: 15px;
+        color: black !important;
+    }
+
+    form button {
+        padding: 6.20113px 3.10056px !important;
+        font-size: 10.852px !important;
+        line-height: 13px;
     }
 }
 

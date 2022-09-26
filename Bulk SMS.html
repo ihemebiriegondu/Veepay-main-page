@@ -15,13 +15,18 @@
 <body>
     <!-- logo on header -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light pt-3">
-        <div class="container-fluid m-auto ms-0 ps-0">
+        <div class="container-fluid m-auto ms-0 ps-0 d-lg-block d-none">
             <a class="navbar-brand" href="./dashboard.html">
                 <img src="./images/Veepay Logo Png.png" alt="">
             </a>
         </div>
+        <div class="home-page d-lg-none d-block">
+            <a href="./dashboard.html"><img src="images/Arrow 3.png" alt="" class="arrow">
+                <h5>Back to Homepage</h5>
+            </a>
+        </div>
     </nav>
-    <div class="home-page">
+    <div class="home-page d-lg-block d-none">
         <a href="./dashboard.html"><img src="images/Arrow 3.png" alt="" class="arrow">
             <h5>Back to Homepage</h5>
         </a>
@@ -33,13 +38,17 @@
                 <div class="input-group mb-4">
                     <label for="sender">Sender</label>
                     <input type="text" name="text" class="form-control sender form-control-lg"
-                        placeholder="input Sender or Organization name" aria-label="sender">
+                        placeholder="Input Sender or Organization name" aria-label="sender">
                 </div>
 
-                <div class="input-group mb-4">
+                <div class="mb-4">
                     <label for="recipient">Recipient</label>
-                    <input type="text" name="text" class="form-control recipient form-control-lg"
-                        placeholder="input Numbers or select other options" aria-label="recipient">
+                    <select id="recipient" class="form-select form-select-lg">
+                        <option value="select-biller">Input Numbers or select other options</option>
+                        <option value="contact">Select from Contacts</option>
+                        <option value="g-drive">Upload contacts from Google Drive</option>
+                        <option value="file">Upload contact file</option>
+                    </select>
                 </div>
 
                 <div class="input-group mb-4">
@@ -51,6 +60,26 @@
                 <div>
                     <label for="sms-body">SMS Body</label>
                     <textarea name="" id="" cols="30" rows="5" placeholder="Type your message..."></textarea>
+                </div>
+
+                <div class="send-options-div">
+                    <div class="d-flex">
+                        <h2 class="send-options text-black">Send:</h2>
+                        <div class="mt-lg-2">
+                            <div class="form-check d-flex align-items-center mb-3">
+                                <input class="form-check-input m-0 me-4 px-2" type="checkbox" value="" id="immediately">
+                                <label class="form-check-label m-0" for="immediately">
+                                    Immediately
+                                </label>
+                            </div>
+                            <div class="form-check d-flex align-items-center">
+                                <input class="form-check-input m-0 me-4 px-2" type="checkbox" value="" id="schedule">
+                                <label class="form-check-label m-0" for="schedule">
+                                    Schedule
+                                </label>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div id="container">

@@ -18,7 +18,7 @@ body:before {
   bottom: 0;
   left: 0;
   width: 45%;
-  background: rgb(221, 231, 248);
+  background: rgb(207, 215, 228);
   transform: skew(-10deg);
   transform-origin: top;
 }
@@ -36,7 +36,7 @@ body:before {
   }
 
   body {
-    background-color: rgb(221, 231, 248);
+    background-color: rgb(207, 215, 228);
   }
 
   body:before {
@@ -47,7 +47,7 @@ body:before {
     bottom: 0;
     left: 0;
     width: 100%;
-    background: rgb(221, 231, 248);
+    background: rgb(207, 215, 228);
     transform: skew(0);
     transform-origin: top;
   }
