@@ -6,6 +6,15 @@ $secondary: orange;
 $light: rgb(244, 246, 250);
 $info: rgb(222, 226, 230);
 
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 991px,
+    xl: 1200px,
+    xxl: 1400px
+);
+
 $navbar-light-color: $primary;
 $navbar-light-hover-color: $primary;
 $navbar-light-toggler-border-color: rgba($primary, 0);
@@ -106,9 +115,11 @@ nav {
     justify-content: center !important;
     align-items: center !important;
 
+
     .veepay-intro-div {
         height: 100% !important;
         width: 100% !important;
+        margin-left: -63px !important;
 
         .veepay-logo-div {
             width: 100% !important;
@@ -124,7 +135,7 @@ nav {
             font-family: 'Montserrat';
             font-style: normal;
             font-weight: 500 !important;
-            font-size: 16px;
+            font-size: 16px !important;
             line-height: 24px !important;
             color: #000000;
         }
@@ -132,9 +143,9 @@ nav {
         a {
             font-family: 'Poppins';
             font-style: italic;
-            font-weight: 500;
-            font-size: 15px;
-            line-height: 24px;
+            font-weight: 500 !important;
+            font-size: 15px !important;
+            line-height: 24px !important;
             text-decoration-line: underline;
             color: #FFFFFF;
         }
@@ -149,7 +160,6 @@ nav {
 
 .header-img {
     width: 80%;
-    margin: auto;
     object-fit: cover;
 }
 
@@ -162,7 +172,7 @@ nav {
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 700;
-        font-size: 40px;
+        font-size: 40px !important;
         line-height: 49px;
         color: #000000;
     }
@@ -171,7 +181,7 @@ nav {
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 500;
-        font-size: 20px;
+        font-size: 20px !important;
         line-height: 28px;
         text-align: center;
         color: #000000;
@@ -517,6 +527,7 @@ td {
 
     .copyright {
         padding: 13px 0;
+
         p {
             font-family: 'Montserrat';
             font-style: italic;
@@ -593,24 +604,274 @@ td {
     }
 }
 
-@media (max-width: 920px) {
+@media (max-width: 1024px) {
     .testimonial {
 
         .d-flex {
-            height: 30rem;
+            background: rgba(159, 175, 202, 0.1);
         }
 
         .testimonial-img-div {
             height: 100%;
 
+            img {
+                width: 298px;
+                height: 250.03px;
+                object-fit: contain;
+            }
+        }
+
+        .testimonial-text {
+            h2 {
+                font-size: 30px !important;
+                line-height: 24px;
+            }
+
+            li {
+                font-size: 18px !important;
+                line-height: 24px;
+            }
+
+            /*li a {
+                font-family: 'Poppins';
+                font-style: italic;
+                font-weight: 500;
+                font-size: 15px !important;
+                line-height: 24px;
+                text-decoration-line: underline;
+                color: #0E387A;
+            }*/
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .veepay-intro-main-div {
+
+        .veepay-intro-div {
+            margin-left: 0 !important;
+
+            .veepay-logo-div {
+                width: 100% !important;
+
+                img {
+                    width: 300px !important;
+                    height: 90px !important;
+                }
+            }
+        }
+
+    }
+
+    .header-img-div {
+        width: 258.46px;
+        height: 257px;
+    }
+
+    .header-img {
+        width: 100%;
+        height: 100%;
+        margin: auto !important;
+        object-fit: cover;
+    }
+
+    .product-head {
+        h2 {
+            font-size: 20px !important;
+            line-height: 24px;
+        }
+
+        p {
+            font-size: 15px !important;
+            line-height: 24px;
+        }
+    }
+
+    .first-home-card {
+        height: 250px !important;
+
+        .i-div {
+            padding-top: 43px !important;
+            margin-bottom: 20px !important;
+
+            i {
+                padding: 13px 15px !important;
+                font-size: 16px !important;
+            }
+        }
+
+        h2 {
+            font-size: 18px !important;
+            line-height: 15px;
+        }
+
+        .buy-button {
+            font-size: 10px;
+            line-height: 17px;
+            padding: 1.37px 11.15px !important;
+        }
+    }
+
+    .feed {
+        font-size: calc(1rem + 1.5vw)
+    }
+
+    .pricing-container {
+        h2 {
+            font-size: 20px !important;
+            line-height: 24px;
+        }
+
+        .nav-link {
+            font-size: 16px !important;
+            line-height: 15px;
+        }
+    }
+
+    .testimonial {
+
+        .d-flex {
+            background: rgba(159, 175, 202, 0.1);
+        }
+
+        .testimonial-img-div {
+            height: 100%;
 
             img {
-                height: 100%;
-                width: 100%;
-                object-fit: cover;
+                width: 298px;
+                height: 250.03px;
+                object-fit: contain;
+            }
+        }
+
+        .testimonial-text {
+            h2 {
+                font-size: 20px !important;
+                line-height: 24px;
+            }
+
+            li {
+                font-size: 15px !important;
+                line-height: 24px;
+            }
+
+            /*li a {
+                font-family: 'Poppins';
+                font-style: italic;
+                font-weight: 500;
+                font-size: 15px !important;
+                line-height: 24px;
+                text-decoration-line: underline;
+                color: #0E387A;
+            }*/
+        }
+    }
+
+    thead tr th {
+        font-size: 7.02167px !important;
+        line-height: 9px;
+    }
+
+    td {
+        font-size: 5.85139px !important;
+        line-height: 8px;
+    }
+
+    .other-services {
+        font-size: 6.9px !important;
+        line-height: 9px;
+    }
+
+    .last-tr {
+        h3 {
+            font-size: 7.02167px !important;
+            line-height: 9px;
+        }
+
+        li {
+            font-size: 5.85139px !important;
+            line-height: 8px;
+        }
+    }
+
+    .nav-tabs-link {
+        font-size: 20px !important;
+        line-height: 24px !important;
+    }
+
+    .FAQ {
+        margin-top: 120px !important;
+
+        h3 {
+            font-size: 20px !important;
+            line-height: 24px;
+        }
+
+        h2 button {
+            font-size: 16px !important;
+            line-height: 24px;
+            text-align: start;
+        }
+
+        .accordion-body {
+            font-size: 14px !important;
+            line-height: 16px;
+        }
+    }
+
+    .FAQ-footer {
+
+        p {
+            font-size: 14px !important;
+            line-height: 16px;
+        }
+
+        a {
+            font-size: 12px !important;
+            line-height: 16px;
+        }
+    }
+
+    .footer {
+
+        h2 {
+            font-size: 16px !important;
+            line-height: 29px;
+        }
+
+        p {
+            font-size: 14px !important;
+            padding: 0 10px !important;
+            line-height: 22px;
+        }
+
+        hr {
+            margin-bottom: 34px !important;
+            display: inline-block;
+        }
+
+        .footer-icons {
+            margin-top: 12px !important;
+            margin-bottom: 54px !important;
+        }
+
+        .footer-icons img {
+            width: 22px;
+            height: 22px;
+        }
+
+        .copyright {
+            padding: 13px 0;
+
+            p {
+                font-size: 10.8019px !important;
+                line-height: 13px;
             }
         }
     }
+}
+
+@media (max-width: 920px) {
 
     .dashboard-testimonial {
 
@@ -628,6 +889,35 @@ td {
 }
 
 @media (max-width: 768px) {
+    .veepay-intro-main-div {
+
+        .veepay-intro-div {
+
+            .veepay-logo-div {
+
+                img {
+                    width: 271px !important;
+                    height: 79px !important;
+                }
+            }
+
+            p {
+                /*font-size: 16px !important;
+                line-height: 24px !important;*/
+                font-size: 13px !important;
+                line-height: 20px !important;
+            }
+
+            a {
+                /*font-size: 15px !important;
+                line-height: 24px !important;*/
+                font-size: 10px !important;
+                line-height: 15px !important;
+            }
+        }
+
+    }
+
     .dash-nav-link {
         background-color: transparent !important;
         color: #495057 !important;
@@ -641,17 +931,6 @@ td {
         color: black !important;
         border-left: 5px solid $primary  !important;
         border-radius: 0 !important;
-    }
-
-    .testimonial {
-
-        .d-flex {
-            height: auto;
-        }
-
-        img {
-            height: 30rem;
-        }
     }
 
     .dashboard-testimonial {
