@@ -407,8 +407,13 @@ td {
 }
 
 .dash-nav-link {
-    background-color: transparent !important;
-    color: #495057 !important;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px !important;
+    line-height: 29px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5) !important;
 }
 
 .dash-nav-link.active,
@@ -416,9 +421,6 @@ td {
     outline: none !important;
     background-color: transparent !important;
     color: black !important;
-    border-left: 5px solid $primary  !important;
-    border-radius: 0 !important;
-    margin-left: 0.7rem;
 }
 
 .vl {

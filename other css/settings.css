@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 body {
     background-color: rgb(221, 231, 248);
     overflow-x: hidden;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Montserrat';
 }
 
 main {
@@ -27,29 +31,47 @@ a {
 
 .dash-nav-link {
     font-weight: 700;
+    padding-left: 80px !important;
+}
+
+.dash-nav-link.active {
+    border-left: 8px solid #0E387A !important;
+    border-radius: 2px !important;
+    margin-left: 8px;
+    padding-left: 64px !important;
+}
+
+.home-page {
+    margin-left: 3rem;
+    margin-bottom: 10px !important;
+    margin-top: 60px !important;
 }
 
 .home-page h5 {
     display: inline;
-    color: #292929;
-    font-size: 16px;
-    font-weight: 700;
-}
-
-.home-page-small{
-    margin-left: 1rem;
-}
-
-.home-page-small h5{
-    display: inline;
-    color: #292929;
-    font-size: 16px;
-    font-weight: 700;
+    font-family: 'Montserrat' !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px !important;
+    line-height: 20px;
+    color: #292929 !important;
 }
 
 .arrow {
-    width: 10px;
+    width: 9.44px;
     margin-right: 3px;
+}
+
+.settings-h1 {
+    font-family: 'Montserrat' !important;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px !important;
+    line-height: 39px;
+    color: #0E387A !important;
+    margin-top: 57px !important;
+    margin-left: 75px !important;
+    margin-bottom: 47px !important;
 }
 
 .sidebar {
@@ -87,7 +109,6 @@ ul li:hover a {
 .sidebar ul a {
     margin-right: 16px;
 }
-
 
 
 .logout_icon a {
@@ -175,10 +196,53 @@ input[type=tel] {
     height: 50px;
     padding: 0 1rem;
     margin-bottom: 1rem;
-    border-radius: 5px;
-    border: none;
     margin-top: 0.2rem;
-    outline: none;
+    outline: none !important;
+    border: 0.567308px solid rgba(0, 0, 0, 0.8) !important;
+    border-radius: 5.67308px !important;
+}
+
+.profile-buttons {
+    padding: 7.03636px 25.8px !important;
+    gap: 4.69px;
+    background: #0E387A;
+    border-radius: 3.75273px !important;
+    font-family: 'Poppins' !important;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 14.52px !important;
+    line-height: 20px;
+}
+
+.bank-details {
+    font-family: 'Montserrat';
+    font-style: normal !important;
+    font-weight: 500 !important;
+    font-size: 16px !important;
+    line-height: 20px;
+    color: #292929 !important;
+}
+
+.account-balance {
+    font-family: 'Montserrat';
+    font-style: normal !important;
+    font-weight: 600 !important;
+    font-size: 24px !important;
+    line-height: 29px;
+    color: #0E387A;
+}
+
+.funds-button {
+    padding: 7.03636px 25.8px !important;
+    gap: 4.69px !important;
+    background: #0E387A;
+    border-radius: 3.75273px !important;
+    font-family: 'Poppins' !important;
+    color: white !important;
+    font-style: italic;
+    font-weight: 500 !important;
+    font-size: 14.52px !important;
+    line-height: 20px;
 }
 
 label {
@@ -237,13 +301,77 @@ label {
 .profile1 {
     background-color: white;
     padding: 2.5rem;
+    padding-left: 48px !important;
+}
+
+.profile1 .user-info {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px !important;
+    line-height: 29px;
+    color: #0E387A;
+    margin-top: 30px !important;
+    margin-bottom: 15px !important;
+}
+
+.logout-anchor img {
+    margin-right: 6.21px !important;
+}
+
+.logout-anchor p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px !important;
+    line-height: 20px;
+    color: #292929 !important;
+}
+
+.footer {
+    padding: 0 !important;
+}
+
+.footer .copyright {
+    padding: 13px 0;
+}
+
+.footer .copyright p {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: white;
+    margin: auto !important;
 }
 
 
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
     main {
-        padding-right: 2rem;
+        padding-right: 25px !important;
+        padding-left: 25px !important;
+    }
+
+    .home-page {
+        margin-top: 0 !important;
+    }
+
+    .home-page h5 {
+        display: inline;
+        font-family: 'Montserrat' !important;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 11px !important;
+        line-height: 12px;
+        color: #292929 !important;
+    }
+
+    .arrow {
+        width: 9.44px;
+        margin-right: 3px;
     }
 
     .profile1 {
@@ -253,16 +381,19 @@ label {
 }
 
 @media (max-width: 768px) {
-    main{
-        padding: 0 0 2rem 0;
-        margin-top: 0;
-    }
-
-    #about-tab-pane{
+    #about-tab-pane {
         margin-top: 3.6rem;
     }
 
-    #faq-tab-pane, #contact-tab-pane{
+    #faq-tab-pane,
+    #contact-tab-pane {
         margin-top: 5rem;
+    }
+}
+
+@media (max-width: 567px) {
+    main {
+        padding-right: 15px !important;
+        padding-left: 15px !important;
     }
 }
