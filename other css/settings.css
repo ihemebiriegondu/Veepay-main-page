@@ -355,6 +355,13 @@ label {
         padding-left: 25px !important;
     }
 
+    .dash-nav-link.active {
+        border-left: 5px solid #0E387A !important;
+        border-radius: 2px !important;
+        margin-left: 0 !important;
+        padding-left: 74px !important;
+    }
+
     .home-page {
         margin-top: 0 !important;
     }
