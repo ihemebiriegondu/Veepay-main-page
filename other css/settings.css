@@ -74,6 +74,10 @@ a {
     margin-bottom: 47px !important;
 }
 
+.x-mark {
+    font-size: 34px !important;
+}
+
 .sidebar {
     position: fixed;
     left: 0;
@@ -167,11 +171,36 @@ ul li:hover a {
 .container-new h5,
 h6 {
     color: #0E387A;
-    font-weight: 100;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400 !important;
+    font-size: 18px !important;
+    line-height: 22px;
 }
 
-h5 {
-    font-size: 20px;
+.container-new h5.first-card-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600 !important;
+    font-size: 24px !important;
+    line-height: 29px !important;
+}
+
+.container-new h6.card-subtitle b {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500 !important;
+    font-size: 18px !important;
+    line-height: 22px !important;
+}
+
+.container-new p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px !important;
+    line-height: 22px !important;
+    color: #000000 !important;
 }
 
 .header {
@@ -294,13 +323,34 @@ label {
     margin-top: 2rem;
 }
 
+#faq-tab-pane .accordion-header .accordion-button {
+    font-family: 'Poppins' !important;
+    font-style: normal;
+    font-weight: 600 !important;
+    font-size: 18.8068px !important;
+    line-height: 30px !important;
+    color: #0E387A !important;
+    padding-top: 23px !important;
+    padding-bottom: 23px !important;
+}
+
+#faq-tab-pane .accordion-body.lead {
+    font-family: 'Poppins' !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 16.1924px !important;
+    line-height: 24px !important;
+    color: #0E387A !important;
+    padding-top: 0 !important;
+}
+
 .profile {
     width: auto !important;
 }
 
 .profile1 {
     background-color: white;
-    padding: 2.5rem;
+    padding: 48px !important;
     padding-left: 48px !important;
 }
 
@@ -355,6 +405,11 @@ label {
         padding-left: 25px !important;
     }
 
+    .dash-nav-link {
+        font-size: 18.816px !important;
+        line-height: 23px !important;
+    }
+
     .dash-nav-link.active {
         border-left: 5px solid #0E387A !important;
         border-radius: 2px !important;
@@ -381,22 +436,65 @@ label {
         margin-right: 3px;
     }
 
+    .settings-h1 {
+        font-size: 25.088px !important;
+        line-height: 31px;
+    }
+
     .profile1 {
         background-color: white;
-        padding: 1.5rem;
+        padding: 17px !important;
+    }
+
+    .container-new {
+        padding: 0 !important;
+    }
+
+    .container-new .about-us-title,
+    #faq-tab-pane .faq-title {
+        margin-top: 10px !important;
+        margin-bottom: 30px !important;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18.816px !important;
+        line-height: 23px;
+        text-align: center;
+        color: #000000;
+    }
+
+    .container-new h5,
+    h6 {
+        font-weight: 500 !important;
+        font-size: 16px !important;
+        line-height: 17px !important;
+    }
+
+    .container-new p {
+        font-size: 15px !important;
+        line-height: 15px;
+    }
+
+    #faq-tab-pane .accordion {
+        padding: 0 !important;
+        margin-top: 0 !important;
+        padding-bottom: 6rem !important;
+    }
+
+    #faq-tab-pane .accordion-header .accordion-button {
+        font-size: 16px !important;
+        line-height: 15px;
+        padding-top: 10.43px !important;
+        padding-bottom: 10.43px !important;
+    }
+
+    #faq-tab-pane .accordion-body.lead {
+        font-size: 14.9px !important;
+        line-height: 24px !important;
     }
 }
 
-@media (max-width: 768px) {
-    #about-tab-pane {
-        margin-top: 3.6rem;
-    }
-
-    #faq-tab-pane,
-    #contact-tab-pane {
-        margin-top: 5rem;
-    }
-}
+@media (max-width: 768px) {}
 
 @media (max-width: 567px) {
     main {
