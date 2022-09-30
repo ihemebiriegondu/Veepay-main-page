@@ -378,6 +378,10 @@ label {
     border: none !important;
 }
 
+#contact-tab-pane .form textarea {
+    height: 11rem !important;
+}
+
 #contact-tab-pane .form label {
     font-family: 'Montserrat';
     font-style: normal;

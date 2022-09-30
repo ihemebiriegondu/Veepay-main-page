@@ -1,64 +1,117 @@
-body {
-    background-color: rgb(221, 231, 248);
-    overflow-x: hidden;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-}
 
 a {
     text-decoration: none;
 }
 
-.home-page h5 {
-    display: inline;
-    color: #292929;
-    font-size: 16px;
-    font-weight: 700;
-}
-
-.arrow {
-    width: 12px;
-    margin-top: -4px;
-    margin-right: 3px;
-}
-
 main {
-    padding: 2rem 4rem 4rem 4rem;
+    margin-top: 0 !important;
+    padding: 2rem 0 4rem 0;
 }
 
-/*forget password*/
-
-.code-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+main .withdraw-title {
+    margin-top: 25px !important;
+    margin-bottom: 32px !important;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 40px !important;
+    line-height: 49px;
 }
 
-.code {
-    border-radius: 5px;
-    border: 2px solid rgba(115, 126, 145, 0.7);
-    outline: none;
-    margin: 1%;
-    height: 41px;
-    width: 41px;
-    font-weight: bolder;
-    text-align: center;
-    font-size: 18px;
-    -moz-appearance: textfield;
+main form {
+    background: #FFFFFF;
+    border-radius: 40px 40px 40px 0px !important;
+    padding: 0 84px !important;
 }
 
-.code::-webkit-outer-spin-button,
-.code::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+main .confirm-details {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28.8516px !important;
+    line-height: 35px;
+    color: #292929;
+    margin-top: 41px !important;
+    margin-bottom: 28.11px !important;
 }
 
-.code:valid {
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+main input {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400 !important;
+    font-size: 20.4597px !important;
+    line-height: 31px;
+
+}
+
+main .form-label {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px !important;
+    line-height: 36px;
+    color: #000000;
+}
+
+main .btn {
+    padding: 16px 8px !important;
+    gap: 8px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    color: #FFFFFF;
+    margin-bottom: 77px !important;
+    margin-top: 73px !important;
+}
+
+@media (max-width: 992px) {
+    main .withdraw-title {
+        font-size: 20px !important;
+        line-height: 24px !important;
+    }
+
+    main form {
+        background: #FFFFFF;
+        border-radius: 0px !important;
+        padding: 0 22px !important;
+    }
+
+    main .confirm-details {
+        margin-top: 15px !important;
+        margin-bottom: 4px !important;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px !important;
+        line-height: 16px;
+        color: black !important;
+    }
+
+    main input {
+        font-size: 15.3462px !important;
+        line-height: 17px;
+    }
+
+    main .form-label {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px !important;
+        line-height: 16px;
+        color: #000000;
+    }
+
+    main .btn {
+        padding: 16px 8px !important;
+        gap: 8px;
+        font-size: 10.852px !important;
+        line-height: 13px;
+        margin-bottom: 24.6px !important;
+        margin-top: 30.44px !important;
+    }
 }
