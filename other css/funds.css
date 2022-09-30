@@ -11,7 +11,7 @@ main {
     padding: 2rem 0 4rem 0;
 }
 
-main .withdraw-title {
+main.settings .withdraw-title {
     margin-top: 25px !important;
     margin-bottom: 32px !important;
     font-family: 'Montserrat';
@@ -27,7 +27,7 @@ main form {
     padding: 0 84px !important;
 }
 
-main .confirm-details {
+main.settings .confirm-details {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -38,7 +38,7 @@ main .confirm-details {
     margin-bottom: 28.11px !important;
 }
 
-main input {
+main.settings input {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400 !important;
@@ -47,7 +47,7 @@ main input {
 
 }
 
-main .form-label {
+main.settings .form-label {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
@@ -56,7 +56,7 @@ main .form-label {
     color: #000000;
 }
 
-main .btn {
+main.settings .btn {
     padding: 16px 8px !important;
     gap: 8px;
     font-family: 'Montserrat';
@@ -69,8 +69,89 @@ main .btn {
     margin-top: 73px !important;
 }
 
+.funds-main form {
+    margin-top: 50px !important;
+    padding: 0 !important;
+}
+
+.funds-main .first-fund-card,
+.funds-main .second-fund-card {
+    background: #FFFFFF;
+    border-radius: 40px 40px 40px 0px !important;
+    padding: 0 84px !important;
+    margin-bottom: 60px !important;
+}
+
+.funds-main .add-card,
+.funds-main .fund-card {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    margin-top: 27px !important;
+    margin-bottom: 30px !important;
+}
+
+.funds-main .first-fund-card .form-label {
+    font-size: 14px !important;
+}
+
+.funds-main .first-fund-card input {
+    font-family: 'Poppins';
+    font-style: normal;
+    border: 0.953846px solid rgba(0, 0, 0, 0.8) !important;
+    border-radius: 0 9.53846px 9.53846px 0;
+    border-left: none !important;
+}
+
+.funds-main .first-fund-card input.form-without-addon {
+    border: 0.953846px solid rgba(0, 0, 0, 0.8) !important;
+    border-radius: 9.53846px;
+    border-left: 0.953846px solid rgba(0, 0, 0, 0.8) !important;
+}
+
+.funds-main .first-fund-card .form-check-input {
+    border-radius: 0 !important;
+    border: 0.903846px solid rgba(14, 56, 122, 0.4) !important;
+}
+
+.funds-main .first-fund-card .form-check-label {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16.9471px !important;
+    line-height: 16px;
+    text-align: center;
+    color: #000000;
+}
+
+.funds-main .first-fund-card .input-group-text {
+    border: 0.953846px solid rgba(0, 0, 0, 0.8) !important;
+    border-radius: 9.53846px 0 0 9.53846px;
+    border-right: none !important;
+}
+
+.funds-main .second-fund-card label {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400 !important;
+    font-size: 24px !important;
+    line-height: 36px;
+    color: #000000;
+}
+
+.funds-main .second-fund-card .btn {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 28px !important;
+    line-height: 34px;
+    padding: 16px 8px !important;
+}
+
 @media (max-width: 992px) {
-    main .withdraw-title {
+    main.settings .withdraw-title {
         font-size: 20px !important;
         line-height: 24px !important;
     }
@@ -81,7 +162,7 @@ main .btn {
         padding: 0 22px !important;
     }
 
-    main .confirm-details {
+    main.settings .confirm-details {
         margin-top: 15px !important;
         margin-bottom: 4px !important;
         font-family: 'Poppins';
@@ -92,12 +173,12 @@ main .btn {
         color: black !important;
     }
 
-    main input {
+    main.settings input {
         font-size: 15.3462px !important;
         line-height: 17px;
     }
 
-    main .form-label {
+    main.settings .form-label {
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 400;
@@ -106,12 +187,81 @@ main .btn {
         color: #000000;
     }
 
-    main .btn {
+    main.settings .btn {
         padding: 16px 8px !important;
         gap: 8px;
         font-size: 10.852px !important;
         line-height: 13px;
         margin-bottom: 24.6px !important;
         margin-top: 30.44px !important;
+    }
+
+    .funds-main form {
+        margin-top: 23px !important;
+        padding: 0 !important;
+    }
+
+    .funds-main .first-fund-card,
+    .funds-main .second-fund-card {
+        background: #FFFFFF;
+        border-radius: 0px !important;
+        padding: 0 18px !important;
+        margin-bottom: 26.29px !important;
+    }
+
+    .funds-main .add-card,
+    .funds-main .fund-card {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        margin-top: 22px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .funds-main .first-fund-card .form-label {
+        font-size: 13px !important;
+    }
+
+    .funds-main .first-fund-card input {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15 !important;
+        line-height: 9px;
+    }
+
+    .funds-main .first-fund-card input.form-without-addon {
+        border: 0.953846px solid rgba(0, 0, 0, 0.8) !important;
+        border-radius: 9.53846px;
+        border-left: 0.953846px solid rgba(0, 0, 0, 0.8) !important;
+    }
+
+    .funds-main .first-fund-card .form-check-label {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px !important;
+        line-height: 8px;
+        text-align: center;
+        color: #000000;
+    }
+
+    .funds-main .second-fund-card label {
+        font-size: 15px !important;
+        line-height: 16px;
+    }
+
+    .funds-main .second-fund-card input {
+        font-family: 'Poppins';
+        font-size: 16px !important;
+        line-height: 3px;
+    }
+
+    .funds-main .second-fund-card .btn {
+        padding: 6.20113px 3.10056px !important;
+        gap: 3.1px;
+        font-weight: 700;
+        font-size: 10.852px !important;
+        line-height: 13px;
     }
 }
