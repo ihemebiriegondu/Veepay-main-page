@@ -365,6 +365,40 @@ label {
     margin-bottom: 15px !important;
 }
 
+#contact-tab-pane .form h1 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 32px !important;
+    line-height: 62px !important;
+    color: #0E387A !important;
+}
+
+#contact-tab-pane .form input {
+    border: none !important;
+}
+
+#contact-tab-pane .form label {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500 !important;
+    font-size: 21px !important;
+    color: #000000;
+}
+
+#contact-tab-pane .form .form-check-input {
+    border: 1px solid #0E387A !important;
+    box-shadow: none !important;
+}
+
+#contact-tab-pane .form .form-check-label {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500 !important;
+    font-size: 12px !important;
+    color: #000000;
+}
+
 .logout-anchor img {
     margin-right: 6.21px !important;
 }
@@ -491,6 +525,16 @@ label {
     #faq-tab-pane .accordion-body.lead {
         font-size: 14.9px !important;
         line-height: 24px !important;
+    }
+
+    #contact-tab-pane .form h1 {
+        font-size: 22.5568px !important;
+        line-height: 44px !important;
+    }
+
+    #contact-tab-pane .form label {
+        font-size: 17.4755px !important;
+        line-height: 32px;
     }
 }
 
